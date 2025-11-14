@@ -574,3 +574,35 @@ body {
     padding-top: 80px;
 }
 
+/* ==========================
+   🧭 FIXED BACK TO TOP SIDEBAR
+========================== */
+.back-to-top-sidebar {
+  position: fixed;
+  bottom: 40px;
+  right: 35px;
+  z-index: 50;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.back-to-top-sidebar.visible {
+  opacity: 1;
+}
+
+.back-to-top-sidebar button {
+  background: #009966;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+}
+
+.back-to-top-sidebar button:hover {
+  background: #00784e;
+  transform: translateY(-2px);
+}
