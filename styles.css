@@ -41,27 +41,24 @@ main.main {
 }
 
 /* ==========================
-   🌿 FIXED HEADER — STAYS ON TOP, DOESN’T SCROLL
+   🌿 FIXED HEADER — STAYS ON TOP
 ========================== */
 .header {
-    position: fixed !important;       /* Fige complètement */
+    position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
     height: 70px;
-    width: 100vw;                     /* pleine largeur de l’écran */
-    z-index: 1000;                    /* reste au-dessus de tout */
-    background: linear-gradient(135deg, #3A8C69, #4BB17A); /* même couleur que le bouton Subscribe */
+    width: 100vw;
+    z-index: 1000;
+    background: linear-gradient(135deg, #3A8C69, #4BB17A);
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    position: fixed;
 }
 
-/* Contenu interne centré */
 .header-inner {
     max-width: 1200px;
     width: 100%;
@@ -72,12 +69,10 @@ main.main {
     align-items: center;
 }
 
-/* Titre blanc + loader */
 .header-inner h1 {
     font-size: 1.9rem;
     font-weight: 700;
     color: #ffffff;
-    letter-spacing: 0.02em;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -99,7 +94,6 @@ main.main {
     }
 }
 
-/* Liens de navigation */
 .header-inner nav a {
     color: #ffffff;
     font-weight: 600;
@@ -113,10 +107,8 @@ main.main {
     opacity: 0.85;
 }
 
-/* === Espace sous la barre === */
 body {
-    margin: 0;
-    padding-top: 80px; /* évite que le contenu passe derrière la barre */
+    padding-top: 80px;
     overflow-x: hidden;
 }
 
@@ -252,28 +244,38 @@ footer.footer {
 }
 
 /* ==========================
-   🔝 BACK TO TOP BUTTON
+   🔝 BACK TO TOP BUTTON — CLEAN VERSION
 ========================== */
-.back-to-top {
+#back-to-top {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
-    padding: 10px 14px;
-    border: none;
-    background: var(--accent);
+    bottom: 25px;
+    right: 25px;
+    background: #00A36C;
     color: white;
+    padding: 12px 16px;
+    border-radius: 50px;
+    font-size: 14px;
     font-weight: 600;
-    border-radius: 999px;
-    box-shadow: var(--shadow-soft);
-    cursor: pointer;
-    display: none;
-    transition: all 0.2s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.25s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
 }
-.back-to-top.visible {
-    display: block;
+
+#back-to-top:hover {
+    opacity: 1;
+    transform: translateY(-3px);
 }
-.back-to-top:hover {
-    background: var(--accent-soft);
+
+@media (max-width: 768px) {
+    #back-to-top {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 14px;
+        font-size: 13px;
+    }
 }
 
 /* ==========================
@@ -286,21 +288,12 @@ footer.footer {
     main.main {
         padding: 25px 20px;
     }
-    .hero {
-        grid-template-columns: 1fr;
-    }
-    .back-to-top {
-        bottom: 20px;
-        right: 20px;
-    }
 }
 
 /* ==========================
    ✨ TEXT & LINK STYLE
 ========================== */
-a,
-a:link,
-a:visited {
+a, a:link, a:visited {
     color: var(--accent);
     text-decoration: none;
 }
@@ -320,73 +313,7 @@ a:hover {
 }
 
 /* ==========================
-   🧭 Sidebar Floating Button
-========================== */
-.sidebar-nav {
-  position: fixed;
-  right: 35px;
-  bottom: 60px;
-  z-index: 50;
-}
-
-.back-to-top-btn {
-  display: none;
-  background: #009966;
-  color: #fff;
-  border: none;
-  border-radius: 999px;
-  padding: 12px 18px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-  transition: all 0.25s ease-in-out;
-}
-
-.back-to-top-btn:hover {
-  background: #007B55;
-  transform: translateY(-3px);
-}
-
-.back-to-top-btn.visible {
-  display: inline-block;
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
-  .sidebar-nav {
-    right: 20px;
-    bottom: 30px;
-  }
-  .back-to-top-btn {
-    padding: 10px 14px;
-    font-size: 0.85rem;
-  }
-}
-
-.subscribe-section {
-    background: rgba(10, 18, 15, 0.95);
-    border-radius: var(--radius-xl);
-    border: 1px solid var(--border-subtle);
-    padding: 20px 24px;
-    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
-    margin-top: 40px;
-}
-
-.subscribe-section h3 {
-    color: var(--accent-soft);
-    font-size: 1rem;
-    margin-bottom: 12px;
-}
-
-.subscribe-section p {
-    color: var(--text-muted);
-    font-size: 0.85rem;
-    margin-top: 8px;
-}
-
-/* ==========================
-   💌 SUBSCRIBE SECTION (new)
+   💌 SUBSCRIBE SECTION
 ========================== */
 .subscribe-section {
     background: rgba(10, 18, 15, 0.95);
@@ -429,12 +356,10 @@ a:hover {
     font-size: 1rem;
     font-weight: 600;
     color: #007B55;
-    display: block;
     margin-bottom: 10px;
 }
 
 .subscribe-card input {
-    flex: 1;
     border-radius: 999px;
     border: 1px solid #ccc;
     padding: 8px 12px;
@@ -461,148 +386,4 @@ a:hover {
     font-size: 0.8rem;
     color: #666;
     margin-top: 10px;
-}
-
-body {
-    padding-top: 80px; /* espace sous la barre fixe */
-}
-
-/* ==========================
-   🌿 FIXED HEADER (FORCÉ)
-========================== */
-header.header {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 70px;
-    z-index: 9999;
-    background: linear-gradient(135deg, #3A8C69, #4BB17A);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    margin: 0;
-    padding: 0;
-}
-
-/* Inner container centré */
-.header-inner {
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Titre + loader */
-.header-inner h1 {
-    color: #fff;
-    font-size: 1.9rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
-}
-
-.header-loader {
-    width: 20px;
-    height: 20px;
-    border: 3px solid rgba(255, 255, 255, 0.4);
-    border-top-color: #fff;
-    border-radius: 50%;
-    animation: spin 1.2s linear infinite;
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Liens de navigation */
-.header-inner nav a {
-    color: #fff !important;
-    font-weight: 600;
-    font-size: 1.05rem;
-    text-decoration: none;
-    margin-left: 24px;
-    transition: opacity 0.2s ease;
-}
-
-.header-inner nav a:hover {
-    opacity: 0.8;
-}
-
-/* Empêche le contenu de passer sous la barre */
-body {
-    padding-top: 80px !important;
-    margin: 0;
-}
-
-/* ==========================
-   🌿 HEADER that hides on scroll down
-========================== */
-header.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70px;
-    width: 100vw;
-    background: linear-gradient(135deg, #3A8C69, #4BB17A);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-    transition: transform 0.4s ease, opacity 0.3s ease;
-}
-
-.header.hidden {
-    transform: translateY(-100%);
-    opacity: 0;
-}
-
-/* Empêche le contenu d’être masqué dessous */
-body {
-    padding-top: 80px;
-}
-
-/* ==========================
-   🧭 FIXED BACK TO TOP SIDEBAR
-========================== */
-.back-to-top-sidebar {
-  position: fixed;
-  bottom: 40px;
-  right: 35px;
-  z-index: 50;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.back-to-top-sidebar.visible {
-  opacity: 1;
-}
-
-.back-to-top-sidebar button {
-  background: #009966;
-  color: #fff;
-  border: none;
-  padding: 10px 14px;
-  font-size: 0.9rem;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  transition: all 0.2s ease;
-}
-
-.back-to-top-sidebar button:hover {
-  background: #00784e;
-  transform: translateY(-2px);
 }
