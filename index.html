@@ -1,603 +1,739 @@
 
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <style>
-            body {
-                font-family: 'Inter', system-ui, sans-serif;
-                background:#F8FAF9;
-                margin:0;
-                padding:20px;
-            }
-            .section {
-                margin-top:45px;
-                border-radius:14px;
-                padding:0;
-                overflow:hidden;
-                box-shadow:0 2px 10px rgba(0,0,0,0.06);
-            }
-            .section-header {
-                cursor:pointer;
-                padding:18px 22px;
-                color:white;
-                font-size:1.35rem;
-                font-weight:600;
-            }
-            .section-content {
-                display:none;
-                background:white;
-                padding:20px 25px;
-                animation: slideDown 0.4s ease;
-            }
-            @keyframes slideDown {
-                from { opacity:0; transform:translateY(-10px); }
-                to { opacity:1; transform:translateY(0); }
-            }
-            .entry {
-                margin-bottom:28px;
-                padding-bottom:28px;
-                border-bottom:1px solid #EEE;
-            }
-            .entry-title a {
-                text-decoration:none;
-                color:#0A6B47;
-                font-size:1.25rem;
-                font-weight:700;
-            }
-            .entry-summary {
-                background:#EAF5EF;
-                padding:12px 16px;
-                border-left:4px solid #0A6B47;
-                border-radius:6px;
-                margin-top:12px;
-            }
-        </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>AI Infra Weekly Digest</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <script>
-            function toggleSection(id) {
-                const el = document.getElementById(id);
-                el.style.display = el.style.display === "block" ? "none" : "block";
-            }
-        </script>
-    </head>
-    <body>
-    <main>
-    
-        <section class="section">
-            <div class="section-header" onclick="toggleSection('research')" style="background:#074933">
-                🔬 Research
-            </div>
+<style>
+    /* POLICE STYLE GPT */
+    body {
+        margin:0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+        background: linear-gradient(180deg, #03130c 0%, #024927 35%, #00844d 65%, #eaf5ef 100%);
+        color:#0A1E17;
+        padding:28px 14px 60px;
+    }
 
-            <div class="section-content" id="research">
-                <blockquote style="border-left:4px solid #074933;padding:10px 15px;background:#F2FBF7;color:#444;">
-                    Latest AI research papers and model evaluations translated for non-experts.
-                </blockquote>
+    main {
+        max-width:950px;
+        margin:0 auto;
+    }
+
+    /* SECTIONS – COLLAPSE B */
+    .newsletter-section {
+        margin-top:30px;
+        border-radius:18px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.12);
+        overflow:hidden;
+        backdrop-filter: blur(10px);
+    }
+
+    .section-header {
+        display:flex;
+        align-items:center;
+        padding:20px 26px;
+        cursor:pointer;
+        backdrop-filter: blur(6px);
+    }
+
+    .section-tag {
+        font-size:1.25rem;
+        font-weight:700;
+        display:flex;
+        align-items:center;
+        gap:10px;
+        color:white;
+    }
+
+    .chevron {
+        margin-left:auto;
+        font-size:1.1rem;
+        color:white;
+        transition:transform 0.2s ease;
+    }
+
+    .collapsed .chevron {
+        transform: rotate(-90deg);
+    }
+
+    /* Contenu repliable */
+    .section-content {
+        display:none;
+        background:white;
+        padding:22px 26px;
+    }
+
+    /* Article card */
+    .newsletter-entry {
+        padding:18px 22px;
+        background:white;
+        border-radius:14px;
+        box-shadow:0 4px 14px rgba(0,0,0,0.05);
+        border:1px solid #e7eee7;
+        margin-bottom:18px;
+    }
+
+    .entry-title a {
+        font-size:1.15rem;
+        font-weight:700;
+        color:#0A6B47;
+        text-decoration:none;
+    }
+
+    .entry-meta {
+        font-size:0.9rem;
+        color:#4c5a52;
+        margin:6px 0 10px;
+    }
+
+    .info-card {
+        background:#eaf5ef;
+        padding:12px 14px;
+        border-left:4px solid #0A6B47;
+        border-radius:10px;
+        margin-top:10px;
+        font-size:0.95rem;
+    }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".newsletter-section").forEach(section => {
+        section.classList.add("collapsed");
+    });
+
+    document.querySelectorAll(".section-header").forEach(header => {
+        header.addEventListener("click", () => {
+            const sec = header.parentElement;
+            sec.classList.toggle("collapsed");
+            const content = sec.querySelector(".section-content");
+            content.style.display = sec.classList.contains("collapsed") ? "none" : "block";
+        });
+    });
+});
+</script>
+
+</head>
+<body>
+<main>
+
+<section class="newsletter-section" id="research">
+    <div class="section-header" style="background:#063826">
+        <span class="section-tag">🔬 Research</span>
+        <span class="chevron">▾</span>
+    </div>
+
+    <div class="section-content">
+        <blockquote style="background:#f4fefa;border-left:4px solid #063826;
+        padding:10px 14px;border-radius:8px;margin-bottom:18px;">
+            Latest AI research papers and model evaluations explained for non-experts.
+        </blockquote>
         
-        <div class="entry">
-            <h3 class="entry-title">
-                <a href="https://huggingface.co/papers/2511.13647" target="_blank">Part-X-MLLM: Part-aware 3D Multimodal Large Language Model</a>
-            </h3>
-
-            <p class="entry-meta">
-                🧠 <strong>Hugging Face</strong> — 2025-11-18 — 🌍 Global
-            </p>
-
-            <div class="entry-summary">
-                <p>Summary:
-Part-X-LLM, a highly advanced and part-aware 3D multimodal large language model designed for industrial applications, is set to revolutionize the field with its exceptional performance on diverse tasks. This groundbreaking technology leverages cutting-edge hardware architectures and innovative algorithms, aiming to optimize computational efficiency while maintaining high accuracy rates.</p>
-            </div>
-        </div>
-        
-        <div class="entry">
-            <h3 class="entry-title">
-                <a href="https://huggingface.co/papers/2511.11332" target="_blank">UFO^3: Weaving the Digital Agent Galaxy</a>
-            </h3>
-
-            <p class="entry-meta">
-                🧠 <strong>Hugging Face</strong> — 2025-11-18 — 🌍 Global
-            </p>
-
-            <div class="entry-summary">
-                <p>Summary:
-UFO^3 is a cutting-edge project by Hugging Face, utilizing LLMs and AI chips to create a decentralized agent network that can autonomously navigate the digital landscape. This system aims to enhance user experience through intuitive interactions across different platforms. The initiative is significant for its potential to redefine how applications are developed and consumed, offering unparalleled flexibility and customization.</p>
-            </div>
-        </div>
-        
-        <div class="entry">
-            <h3 class="entry-title">
-                <a href="https://huggingface.co/papers/2511.13254" target="_blank">Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance</a>
-            </h3>
-
-            <p class="entry-meta">
-                🧠 <strong>Hugging Face</strong> — 2025-11-18 — 🌍 Global
-            </p>
-
-            <div class="entry-summary">
-                <p>Summary:
-Souper-Model, a novel technique for reducing the computational complexity of large language models (LLMs), has been introduced. This method, developed by researchers at Hugging Face and Google Brain, achieves state-of-the-art performance on various benchmark tasks with significantly reduced model size and inference latency compared to traditional methods. Key insights include:
-- Souper-Model optimizes memory usage by dividing LLMs into smaller, more efficient submodels.
-- It leverages simple arithmetic operations to perform complex computations, enhancing both speed and accuracy.
-- The approach has implications for scaling up AI infrastructures without sacrificing performance.</p>
-            </div>
-        </div>
-        
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://huggingface.co/papers/2511.11793" target="_blank">MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Hugging Face</strong> — 2025-11-18 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Hugging Face</strong> · 🗓️ 2025-11-18 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-Researchers at Hugging Face are introducing MiroThinker, a new agent that combines model capacity scaling with context-aware interactions to push the performance boundaries of open-source research agents. This technology leverages advanced models and fine-tuning techniques to enhance computational efficiency and scalability, enabling more complex and resource-intensive tasks.</p>
+MiroThinker is a breakthrough in open-source research agents by enabling them to scale up through increased model size, context-aware scaling, and interactive scaling. This technology pushes the performance boundaries of these agents, making them capable of tackling more complex tasks with greater accuracy and efficiency.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
-                <a href="https://huggingface.co/papers/2511.13646" target="_blank">Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly?</a>
+                <a href="https://huggingface.co/papers/2511.13647" target="_blank">Part-X-MLLM: Part-aware 3D Multimodal Large Language Model</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Hugging Face</strong> — 2025-11-18 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Hugging Face</strong> · 🗓️ 2025-11-18 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-A new agent model called "Live-SWE-agent" is being developed by researchers at OpenAI. The model can self-evolve in real-time to improve its performance on software engineering tasks, making it a significant advancement in the field of artificial intelligence (AI) and software development.</p>
+This article presents a part-aware, 3-dimensional multimodal large language model that incorporates various types of data like text, images, and sound. It aims to enhance the efficiency and accuracy of AI systems by integrating different sources of information. The model is designed for use in applications requiring complex reasoning and handling multiple forms of input simultaneously.</p>
             </div>
-        </div>
-        </div></section>
-        <section class="section">
-            <div class="section-header" onclick="toggleSection('cloud')" style="background:#0B5E3E">
-                ☁️ Cloud
-            </div>
-
-            <div class="section-content" id="cloud">
-                <blockquote style="border-left:4px solid #0B5E3E;padding:10px 15px;background:#F2FBF7;color:#444;">
-                    AI-native cloud platforms, sovereign compute, and GPU availability worldwide.
-                </blockquote>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
+            <h3 class="entry-title">
+                <a href="https://huggingface.co/papers/2511.13254" target="_blank">Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance</a>
+            </h3>
+
+            <p class="entry-meta">
+                <span class="pill-row">
+                    🧠 <strong>Hugging Face</strong> · 🗓️ 2025-11-18 · 🌍 Global
+                </span>
+            </p>
+
+            <div class="info-card">
+                <h4>Summary</h4>
+                <p>Summary:
+This research demonstrates that using simple arithmetic operations instead of advanced neural networks can achieve state-of-the-art language model performance. The study shows that a model based on straightforward mathematical transformations achieves similar accuracy to complex models like BERT, despite being much simpler and requiring less training data. This breakthrough could significantly reduce the computational cost and energy consumption associated with large language models.</p>
+            </div>
+        </article>
+        
+        <article class="newsletter-entry">
+            <h3 class="entry-title">
+                <a href="https://huggingface.co/papers/2511.11332" target="_blank">UFO^3: Weaving the Digital Agent Galaxy</a>
+            </h3>
+
+            <p class="entry-meta">
+                <span class="pill-row">
+                    🧠 <strong>Hugging Face</strong> · 🗓️ 2025-11-18 · 🌍 Global
+                </span>
+            </p>
+
+            <div class="info-card">
+                <h4>Summary</h4>
+                <p>Summary:
+UFO^3, a newly developed open-source framework for digital agents, aims to create an interconnected network of virtual assistants across various domains. This initiative leverages cutting-edge AI technologies such as Transformer models and multi-agent reinforcement learning. The project is driven by stakeholders including tech giants like Alibaba and Tencent, aiming to enhance user experiences through seamless integration of AI-driven solutions.</p>
+            </div>
+        </article>
+        
+        <article class="newsletter-entry">
+            <h3 class="entry-title">
+                <a href="https://huggingface.co/papers/2511.12710" target="_blank">Evolve the Method, Not the Prompts: Evolutionary Synthesis of Jailbreak Attacks on LLMs</a>
+            </h3>
+
+            <p class="entry-meta">
+                <span class="pill-row">
+                    🧠 <strong>Hugging Face</strong> · 🗓️ 2025-11-18 · 🌍 Global
+                </span>
+            </p>
+
+            <div class="info-card">
+                <h4>Summary</h4>
+                <p>Summary:
+Researchers at Hugging Face have developed a novel evolutionary synthesis method that can rapidly identify vulnerabilities in large language models (LLMs). This technique focuses on identifying the underlying causes of attacks rather than generating specific prompts. The approach has the potential to significantly speed up the discovery and exploitation process, making LLMs more vulnerable and less secure.</p>
+            </div>
+        </article>
+        </div></section>
+<section class="newsletter-section" id="cloud">
+    <div class="section-header" style="background:#0A5336">
+        <span class="section-tag">☁️ Cloud</span>
+        <span class="chevron">▾</span>
+    </div>
+
+    <div class="section-content">
+        <blockquote style="background:#f4fefa;border-left:4px solid #0A5336;
+        padding:10px 14px;border-radius:8px;margin-bottom:18px;">
+            AI-native cloud platforms, GPU availability and sovereign compute.
+        </blockquote>
+        
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNekJYelZtTlZfVHNSNjVjWFYyVlI3NjRmWmdiWmwxTVF4QnNhTVZGMUxQdGxBeWpKVGRlUmU2TmU1ME1hRlpkYmVPcVl6V01JQ19nNzNqM0M4eDVaRjdpQ3daRnBDaFo2LTZTbkdLdXIwS3I2YnBtaGhRbHRmMnAyWDR4ZXhXLTRwejU5NUJaX01ZZ0FCbGdFRlFJSG11Zw?oc=5" target="_blank">Cloud-based GPU savings are real – for the nimble - Network World</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-12 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-12 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-Cloud computing is offering significant cost savings to smaller businesses by enabling them to leverage powerful graphics processing units (GPUs) without purchasing expensive dedicated hardware. This technology, known as GPU-as-a-service or "GPU on the Cloud," allows organizations of all sizes to benefit from high-performance computing resources more efficiently and affordably.</p>
+A new study reveals that cloud-native applications can significantly save on GPU costs by offloading compute-intensive tasks to the cloud, making it more accessible and cost-effective for startups. The research finds that cloud-based solutions offer a substantial reduction in hardware expenses compared to traditional data centers.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
-                <a href="https://news.google.com/rss/articles/CBMikwNBVV95cUxNbDRINXZoMHlMN1dXU0dPdjVXVU56NDVnb01Lc0VraVNPa1lZbjdlUnNuNkZISXVlX1ZHM3ZZbDNuaDM5eGRDRHJTbl9pcGtSTzRWTWpaOF9KVlZrcWdDLXhibzFhZHFhNFFld3ZEdENsMlpwM2R2QlVucUxZUWl2NC15bmZNLWQyOHFoQXR5REx5c2tzdWxzZVh0Wmhtb2VqeEVLR0trNkp2dzR6WHhqRUczalFjQWRnZHA4MFRJa21GLUJleEZySjYwOEZXWXJWYmZUcGVzMGw4djBKWDFfNnpuUFBYZWNHa3l0cEZYOVNUUF82aEc2OWVJZXBPUmQ3Q1ljTXdGVkNFcm5ub0h3bUZGTDA2SDFoWTQ1aWU0aTFyQmxVVk8wWDdwZUJrdmRmTFdHMlBSQVNIWXhWWEFUU3VaVU00QlpQTVBxcGo2ZF8wS1lneDJoUVN5dVBWY2pfRTd0ejlIbm5EdG5jLWlZQ1pLaUswd3Juakt5XzFVcTkyX3BscWRseE0yRk4tN0VhZE1j?oc=5" target="_blank">Exclusive | AI Cloud Company Lambda Raises Over $1.5 Billion - The Wall Street Journal</a>
+                <a href="https://news.google.com/rss/articles/CBMikwNBVV95cUxPaGdKUUkwZk9qRkNUWk10ZUZzaGF0TVBVQ2lJeGx4OGJrMzFCQVJZaW5CM2VzbUhjNTVBOS1udGRBWDJvZERIbm5fQkZfTkFSQWQ5YUVYTjl3VzJMM3BXTkVKTEl4cHNvWHNaYy1kZ0ZCU3lMd1R2OHVJVnpFd2ZsYmNaUDRRLUZ0SHpfcGNERVdzX01UdkY0WlFIXzZ3U1B3TkxpT2p0WEQzYl96UThmQlEtRFVHc2xOcEU0YmJjMDQ1ZEFQYVlUNkRDM01FeTZna0otNExyaFlkeXo4S0RMd1MxRFFpbjRpSUxTRmtJd2xDVUxrR2pvOGxIbmJCSkhUdEs1ZU5RUDN1RnVkb0VDQkxHdE94X0V2MERlTW1aN1ktMVAycFRmLTl6aldZbWpHOGVfZWhnVEdpNC1SRnBraFVnVllIWGluYU5nQzFidFZ1YXN2TVN6OUlneGxacmx0T2p1UFBnMmVHcVFBNnNkX1I1Wk5sR0lmbk1VWlJYd2dzNTZCWHlYRUU3Qm5YSTlobF9v?oc=5" target="_blank">Exclusive | AI Cloud Company Lambda Raises Over $1.5 Billion - The Wall Street Journal</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-18 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-18 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-Lambda, an artificial intelligence (AI) cloud company, has raised over $1.5 billion in funding to support its expansion into the global market. This capital influx will help Lambda develop advanced AI models and accelerate growth by acquiring new clients.</p>
+Lambda, a leading artificial intelligence (AI) cloud company, has raised an impressive $1.5 billion in funding, highlighting its significant growth and importance in the AI industry. This investment underscores Lambda's robust expansion strategy and commitment to driving innovation with advanced technology.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTjdhUllKZUI2WFVoV3FDSGZoQUhNYlB4WW1kUHBuY2dYdkcySGg5QXgxV2NvSVp2OWF1OG9KeGdwdXBnYm1rb3lGTEp0Mzc4eEo5UEU5MnVoSUVvV2lSaDN4NGdfdWlLM1FicnROT0xBbm9XTWZVdTdOMTBONlBNWlVtaHlwcWhvRWRDYk1QWjN0bnAzdUdTTlc4d21CMmFIM0dlQUt4NnNLWUZ5akRzbnAyT1ZxbjZo?oc=5" target="_blank">Multi-Agent collaboration patterns with Strands Agents and Amazon Nova | Artificial Intelligence - Amazon Web Services (AWS)</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-11 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-11 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-This article discusses the concept of "Multi-Agent Collaboration Patterns" using the Strands Agent architecture and AWS technology. The research presents a new approach to decentralized multi-agent collaboration in distributed systems, leveraging blockchain-based consensus protocols for secure data sharing among agents. Key findings include improved fault tolerance through decentralization and enhanced trust mechanisms, which can be applied across various domains such as healthcare, finance, and supply chain management.</p>
+The article discusses a novel multi-agent collaboration pattern utilizing the "Strands" framework from Amazon, specifically with its AWS Nova service. This system leverages AI and cloud computing to enable more efficient and effective team coordination across various projects or departments within an organization. Strands Agents serve as decentralized agents that can adapt to different environments and collaborate seamlessly among themselves.</p>
+<p>This technology promises enhanced flexibility in task allocation and communication without the need for centralized control, which could lead to improved productivity and reduced overhead costs. The article highlights the potential applications of this collaboration pattern across multiple industries, including manufacturing, healthcare, and educational institutions, demonstrating its broad applicability.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNV2R2QmlTZlpGM2k5eG5Pa0R6dktnRkJBTFlCM0FZNmlTam5OYnpCZFVXM18wS25Sd3ZMMVEwY2x2RDVXaUVtQkQxVVRXZDE0ZEFOWkxKSmt4dXJNMXdLa3ZrQi1aaU5kNXZKOHRDZ0dQVkFVZGVkU09VTFg0ZTJyYmVrNEV4M2RPQUNlTEs2WEFzV2pfUWptMnkyLVozQkxJcUV6RmpaNG1seGVMUVMyb3BOS1prMFBiZFNLQjlEM3dLQ1k?oc=5" target="_blank">GMI Cloud to build $500 million AI data centre in Taiwan with Nvidia chips - Reuters</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-17 — 🌍 North America
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-17 · 🌍 North America
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-GMI Cloud plans to construct a $500 million artificial intelligence (AI) data center in Taiwan, utilizing NVIDIA's processors. This move aims to boost Taiwanese AI development and compete with Chinese technology giants like Alibaba Cloud. The project is significant as it positions Taiwan as an emerging global player in the AI hardware market.</p>
+GMI Cloud, a Taiwanese technology company, plans to build a massive $500 million artificial intelligence (AI) data center in Taiwan. The project will leverage Nvidia chips for advanced computing capabilities and is expected to revolutionize the local AI ecosystem by providing cutting-edge infrastructure. This investment underscores GMI's commitment to fostering innovation and reflects Taiwan’s growing importance as a hub for AI development.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJN21VRGJRQjVYMTlpVDRVaFI4Vm4wUnlQeUtsV2VJR2lFSGtsUFIyWGg5S2VXNTdBTmpjelFsSXNJZ21Dby1GWHkySjdRNHZZMFJEWFl5cFl4NklqUDZQa1VvUF9STDFR?oc=5" target="_blank">Digital sovereignty summit in Berlin focuses on cloud, AI and secure infrastructure - EU Today</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-18 — 🌍 Europe
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-18 · 🌍 Europe
+                </span>
             </p>
 
-            <div class="entry-summary">
-                <p>Summary:
-The European Union is hosting a digital sovereignty summit in Berlin that emphasizes cloud computing security, artificial intelligence (AI), and data center regulation. The event aims to establish a framework for member states to maintain control over their digital infrastructures. This summit builds on previous EU initiatives aimed at securing critical infrastructure and protecting sensitive data.</p>
+            <div class="info-card">
+                <h4>Summary</h4>
+                <hr />
+<p>Summary:
+The European Union is hosting a digital sovereignty summit in Berlin that emphasizes the importance of cloud computing, artificial intelligence (AI), and secure infrastructure for its member states. The summit aims to address concerns about data privacy and security while ensuring national control over tech policies. It showcases efforts by EU nations to enhance their capabilities independently from US-driven technologies.</p>
             </div>
-        </div>
+        </article>
         </div></section>
-        <section class="section">
-            <div class="section-header" onclick="toggleSection('hardware')" style="background:#0F744A">
-                💾 Hardware
-            </div>
+<section class="newsletter-section" id="hardware">
+    <div class="section-header" style="background:#0E6E46">
+        <span class="section-tag">💾 Hardware</span>
+        <span class="chevron">▾</span>
+    </div>
 
-            <div class="section-content" id="hardware">
-                <blockquote style="border-left:4px solid #0F744A;padding:10px 15px;background:#F2FBF7;color:#444;">
-                    GPU, semiconductor and accelerator architecture updates.
-                </blockquote>
+    <div class="section-content">
+        <blockquote style="background:#f4fefa;border-left:4px solid #0E6E46;
+        padding:10px 14px;border-radius:8px;margin-bottom:18px;">
+            GPU, semiconductors, ASICs and accelerator architecture updates.
+        </blockquote>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPM1dhZ1Z5QVlKS1BsMUtSMklVNi14VHJjaVl0ZXd2ZWVUWHRrbHozR3p0bGlNR3RUUG16ZnVSM3JjUVhfM2JBWXp2bmM3X01RSE15R1o5YlJBSGhtZGFPclF5eVhCVlhxRWRCYjhtdEh0aGhJY0l0UWRCeXloM2tOa3ItU01sLU0?oc=5" target="_blank">Do you really need all those GPUs? - InfoWorld</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-18 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-18 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-The article explores whether companies truly require a significant number of GPUs for their workloads, challenging the conventional wisdom that more is better. It highlights the complexities involved in choosing an appropriate GPU setup based on workload specifics and performance requirements. The study suggests that while extensive use can lead to improved performance, excessive hardware might not be justified due to higher costs and unnecessary power consumption.</p>
+The article discusses whether traditional GPU-based cloud computing is necessary for AI workloads. It highlights that newer technologies like FPGAs and Arm-based processors can handle most tasks more efficiently, potentially reducing hardware costs. This shift could lead to reduced carbon footprints and improved performance without the need for extensive infrastructure changes.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQdVJLQ3RrQWlVbjg3ZzV2emx4azZwRmpvWVNxdGROeTVPZHdRNzJEOWNpVHdqRUJJR3Q3aHZpaGNISjlZdE5iQlFYbF92MzBKZXJHSFRzNE5TREJKbFdkeGNSNnRfdTdxWmlHYV9PZ2hjelFzX2ZvZkh5Q0RoalVFVFBqb0FkeDNwRHpSbEpsbkl3UjJWVkxpcVZqWDliTDByM1VLQUp1ZUEzR2EwUzFOTWp2SEZlWnpzMHV0RUhocjd6ZnkwX2VoZDRGd2s?oc=5" target="_blank">UT Eclipses 5,000 GPUs To Increase Dominance in Open-Source AI, Strengthen Nation’s Computing Power - UT News</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-17 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-17 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
-                <hr />
-<p>Summary:
-University of Texas (UT) has surpassed a staggering 5,000 GPUs to enhance its leadership in the open-source artificial intelligence field. This achievement strengthens the nation’s computing power and underscores UT's commitment to advancing technological innovation. </p>
+            <div class="info-card">
+                <h4>Summary</h4>
+                <p>Summary:
+University of Texas at Austin has surpassed 5,000 graphics processing units (GPUs) to become the dominant force in open-source artificial intelligence research. This achievement underscores the university's commitment to advancing computational power and innovation in AI through its advanced computing infrastructure.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
-                <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxObTE3eklyY1YxNkJXckJ5WW9Ma0pxamZnM0tiREVCTnBha1kzTjlkRDBCSkNvUjNxZFFjcFBDdVpwaUxwOENqbVEtR2lNQWpOZVJhSkxCdzJGU2J5eUdKT3ZidDJzVjVmZ1Z2Q2psMldLQnZBOUViY1lOM24ycWdHTVlkekdZU01sWmY1cG5UeDVOT0pnaXkwMG1uT212anBwYW40NUpOanp5WHQ1TVHSAa4BQVVfeXFMTzNXcjE2QTlTaDdtVzVxSHE0SXRYLWR5U3laVEs5VU85em1LSnNwMEU5MmdvalA1LTlMWm1JTWphSnZwNS10a2dKOWhUM0VraWo4T1E4R2NjZmJWTUtMRnZCUlhEd1ppQVhlMGFrdjUzTWkzV1Z6U3ljNWhYUE43UG84S0xjMllGMEx0bGZEZWtLRU13cWM2NjFFN0tCSl9sTWRfd0pnb2V3WUF2RC13?oc=5" target="_blank">Tech war: Huawei bets on AI tech to squeeze more performance from GPUs - South China Morning Post</a>
+                <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxObTE3eklyY1YxNkJXckJ5WW9Ma0pxamZnM0tiREVCTnBha1kzTjlkRDBCSkNvUjNxZFFjcFBDdVpwaUxwOENqbVEtR2lNQWpOZVJhSkxCdzJGU2J5eUdKT3ZidDJzVjVmZ1Z2Q2psMldLQnZBOUViY1lOM24ycWdHTVlkekdZU01sWmY1cG5UeDVOT0pnaXkwMG1uT212anBwYW40NUpOanp5WHQ1TVE?oc=5" target="_blank">Tech war: Huawei bets on AI tech to squeeze more performance from GPUs - South China Morning Post</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-17 — 🌍 Asia-Pacific
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-17 · 🌍 Asia-Pacific
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-Huawei is investing heavily in artificial intelligence (AI) technology to enhance its computing capabilities, particularly by optimizing the use of graphics processing units (GPUs). Huawei aims to improve the performance and efficiency of its GPUs through AI-driven algorithms that can dynamically adjust tasks based on workload demands. This approach could potentially reduce power consumption and heat generation while maintaining or even improving overall performance.</p>
+Huawei is reportedly developing a new algorithm called "MindNet" that aims to optimize the performance of GPUs, Huawei's primary hardware for AI applications. This innovation could potentially reduce power consumption and cost by up to 30%, making it more competitive in the market against established players like NVIDIA and AMD.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQNUZwcUV3bzBGcHd5NTZOX0ZNTko5b3JVRkt4QkdhczJrRDU2bXhGRXlWb0d0TV92ZDlTX1daekdTYmVYckpCdGpCOEZHWk83eVlVZERGNU5IcGhMTUl4ZVhjTWRwN3BhVk9uaFE5WjB1eXpTRTM0LV9ENzZOV3piekhoZWtTSWRYUHR6bW5TQTdCTmhFSFFITnRSLVdwMnV6cFFTRTZVMldmWFg3el9RUw?oc=5" target="_blank">How AI agents are reshaping enterprise experience and intelligent flow - cio.com</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-17 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-17 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-AI agents, increasingly integrated into business operations, are transforming the enterprise landscape by enhancing efficiency and customer experiences. These bots can automate routine tasks, provide personalized insights, and streamline workflows across departments. The adoption of AI in enterprises has led to faster decision-making, reduced costs, and improved customer satisfaction. However, this shift also requires careful management of data privacy and ethical considerations.</p>
+AI agents in enterprises are transforming user experiences by providing personalized, context-aware assistance. Companies are leveraging advanced natural language processing (NLP) to integrate AI capabilities into workflows, making them more efficient and enhancing employee satisfaction. This shift is driving innovation in process optimization and customer service support.</p>
+<p>The implications of this change include improved productivity, reduced operational costs, and enhanced user engagement. By automating repetitive tasks, organizations can focus on higher-value activities, leading to significant business benefits.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQMGY3UmlNZXBKN2FJQl9xbG5oUHg3ZURBa0MwOUNFSklBeVFzVFUyZEFrdkptOFFuX2FUYWM2eV9VTGp1c3lxQ1ZSTFdnVDE4LTJxYjdxaE9CUWhHMGQtWktZMkJyMDZKdXlvYWU0UVhrZjFFa1ItVE1wNzhLOHdiamZxd2l6TERjYU1JS05ybDlIeW9z?oc=5" target="_blank">Blockchain AI Agents: The Future of Autonomous On-Chain Intelligence - vocal.media</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-17 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-17 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-Blockchain AI agents are set to revolutionize the field of decentralized intelligence, enabling autonomous decision-making capabilities within blockchain ecosystems. These advanced systems leverage artificial intelligence (AI) and blockchain technology to create smarter, more efficient networks that can autonomously respond to transactions without human intervention.</p>
+Blockchain technology is being integrated with artificial intelligence (AI) agents to create autonomous, on-chain intelligence that can make decisions independently. This innovation aims to enhance efficiency and security in various applications by leveraging blockchain's immutable ledger for consensus and AI's ability to process large volumes of data. The key stakeholders include developers, businesses, and regulatory bodies, who are examining the potential benefits but also the challenges related to smart contracts and interoperability.</p>
             </div>
-        </div>
+        </article>
         </div></section>
-        <section class="section">
-            <div class="section-header" onclick="toggleSection('infra--datacenters')" style="background:#138B56">
-                ⚙️ Infra & Datacenters
-            </div>
+<section class="newsletter-section" id="infra--datacenters">
+    <div class="section-header" style="background:#138B56">
+        <span class="section-tag">⚙️ Infra & Datacenters</span>
+        <span class="chevron">▾</span>
+    </div>
 
-            <div class="section-content" id="infra--datacenters">
-                <blockquote style="border-left:4px solid #138B56;padding:10px 15px;background:#F2FBF7;color:#444;">
-                    Hyperscaler expansions, AI factories and HPC infrastructure.
-                </blockquote>
+    <div class="section-content">
+        <blockquote style="background:#f4fefa;border-left:4px solid #138B56;
+        padding:10px 14px;border-radius:8px;margin-bottom:18px;">
+            Hyperscaler expansions, AI factories and HPC infrastructure.
+        </blockquote>
         
-        <div class="entry">
+        <article class="newsletter-entry">
+            <h3 class="entry-title">
+                <a href="https://news.google.com/rss/articles/CBMi9gJBVV95cUxQSzM2Y010N3VxZFpBV3FvbWJsVkdCRHdvbjhzMGFHS0htcXYtRS1iZnJlUy1BZFRhR2taNUVyRElxYzJ5c01YZ1JnTjN4UkdHcXVUMHY3Rm5QWGpTM3EyMnl3TXFHTTJXQS14bEhGWWNVdFRVT3dOVGZvNXJ1QWZtYXBhZW5hWkRDa2NnbnNqbW96MEEzSHZQeDlWaXB6NFBCTlZwdmRZblBQc0FnOTdRRFh2bjRGa3FWTFZ2ek1WWmhnaTJackUwajBHU2xEMnZlb2dTNUtQVUJldnlGcVBROHo4T3lHN1RfcEVWNDdIR1ltMGJ2endHcEx1VDI1eFRIdVEwUTZqNWwtUGplUzJuNGlhRDhGWkNwYk5UaUgybmxpMkRtNWZTME9Cb2dGeGJ5Y3pSMEJKVzVmSUFMenlsdjBmaG44ZjM3VVhHT1g4ekYtQnZrVGdwSEVWaUhJU0tGT2s3TTRDWlZUdDBiSG1oRDYyeW1PQQ?oc=5" target="_blank">Supermicro Announces New AI Factory Cluster Solutions Based on NVIDIA Enterprise Reference Architectures and NVIDIA Blackwell AI Infrastructure to Simplify the Deployment of AI at Scale - WV News</a>
+            </h3>
+
+            <p class="entry-meta">
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-18 · 🌍 North America
+                </span>
+            </p>
+
+            <div class="info-card">
+                <h4>Summary</h4>
+                <p>Summary: Supermicro, a company in West Virginia known for its data center solutions, announces new AI factory cluster solutions using NVIDIA's enterprise reference architectures and Blackwell AI infrastructure to simplify the deployment of AI at scale. This move underscores their commitment to advanced technology integration and sustainability initiatives.</p>
+            </div>
+        </article>
+        
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE56RFVKRDFBZ2xfMlBxRnNKbHFrVXFnMW9acGtUNmEyaW5WOGRrRnlhbkcyek9LcnVfRHBENGREbVlLRGd6WWpQYTF0MmtlekU0Nk1VZ3YtUjl2SEJlcE9PbklxQXlOdVpvRHdLYTRMbw?oc=5" target="_blank">A single beam of light runs AI with supercomputer power - ScienceDaily</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-16 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-16 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-A project involving a single optical fiber transmitting information from a data center to a supercomputer has been successfully demonstrated. This innovative technology could potentially revolutionize AI infrastructure by enabling real-time computations without the need for traditional server farms.</p>
+A pioneering research project has achieved supercomputing capabilities using just a single photon, marking an important milestone in the development of quantum computing and AI. The project is being conducted at the University of New South Wales, Sydney. This initiative aims to explore the potential applications of quantum light as a source for processing large amounts of data with high accuracy.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxPRnBZQ2xFaW1JNVlYQXgzdEZOMXI4RHhCMUNZOE4tb214WUZHS2EzeTJkQ1QyWVlfQm1CZ3hyaURJRG5CVnVVZlNLeXBVb3J3cTdoSUQwRWVuc3RzbWk0dWFKa3prNHdtVWgxYlFoU2N1alVNS0pBbGVKSWNDUFpwd05BYnVGU2RGQ3RiNUhUZ0NUaTdVOTJfWGEzcEJ0N0FQYjNqMG91QjlQdlpuakExSmZ1QVpMcnZZWkc2NVF2MkhDMVRBa1hYOWtjWVNDbWstZDhSRUExUU5IT0JSX01PS0U1dDBtenBBbXFSMm5MbHRqNkdlN0s3M3VB?oc=5" target="_blank">GMI Cloud to Launch Next-Gen AI Factory in Taiwan with NVIDIA to Power the Future of AI Infrastructure in Asia - PR Newswire</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-17 — 🌍 North America
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-17 · 🌍 North America
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-GMI Cloud is set to launch a new, next-gen AI factory in Taipei, Taiwan, powered by NVIDIA technology. The project aims to revolutionize the future of AI infrastructure in Asia, focusing on energy efficiency and innovative cooling systems. This initiative showcases GMI's commitment to sustainable practices in cloud computing.</p>
+GMI Cloud plans to launch a next-gen AI factory in Taiwan, powered by NVIDIA technology. This facility aims to revolutionize the future of AI infrastructure in Asia.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxOdGdKcDJWTUNxbkZiazlNZ2ZsZjhHcXIzaXBsSno1cmZGVlNHTzNXVmhWakw5bEtiUDZGVzh0VUhtOFdCbjIzOEVFUXIwbUstcDhrU1dtR3RMVk1NY3BWck1kTFItQzcxSmhVbDJEUTZfTkFZSGstLW1YYzBkbDZ4cFdpWGJtbWxqeUNSQjh0Q3JmOXlsMFpWZnp3ZkxVMFd6UlZDYkU4aWpMYkVaTGpNdlA5dUZRVERpbUpXMGhDQzNwRTMzN3hPU2xGNmhacUk?oc=5" target="_blank">Nvidia-backed Cassava Technologies targets up to $700 million for Africa AI data center expansion - Seeking Alpha</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-18 — 🌍 North America
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-18 · 🌍 North America
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-Cassava Technologies, backed by NVIDIA, aims to expand its AI infrastructure in Africa with a projected investment of up to $700 million. The project is set for completion around 2030 and will initially consist of five data centers with a combined capacity of over 160 MW. This expansion underscores the growing demand for AI-driven computing power across sub-Saharan Africa.</p>
+Nvidia-backed Cassava Technologies is planning an expansion of its African AI infrastructure, aiming for a significant investment of up to $700 million. This initiative targets a capacity of about 40 racks and is expected to be built in Nigeria or Kenya. The project underscores the increasing importance of data centers as primary data storage units and the ongoing growth of AI use cases globally.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNQUhISGFfY0d0UFFkcFhyQzNoZEFhX0lYblY1bXpmMF8tUEc5cDVUSU5pNUNVVWNfTnEtYXZBMk8xWjgxZno2TEFtNXFiWjM4WlRlM21HZ1RZdkw4eTllZ0lHcF9ndXNrVXp3QThzN0xIOWZrN00tczhGaVVfeVFUc1BfMHlyOWdsOVlqQXZrejFyUnlIOG1DMDZJYnc?oc=5" target="_blank">GMI Cloud to build $500 million AI data center in Taiwan with Nvidia support - Latest news from Azerbaijan</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-17 — 🌍 North America
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-17 · 🌍 North America
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-GMI Cloud, backed by NVIDIA, is planning to construct a massive $500 million AI data center in Taiwan. This project represents a significant expansion of the company's operations and ties into NVIDIA's ecosystem. The location in Taiwan aligns with global trends toward closer proximity to Asian markets and cloud services.</p>
+GMI Cloud, supported by NVIDIA, plans to construct a significant AI infrastructure project worth $500 million in Taiwan. The facility will encompass around 380 racks and is expected to contribute significantly to cloud computing capabilities.</p>
             </div>
-        </div>
-        
-        <div class="entry">
-            <h3 class="entry-title">
-                <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNVnRMX3BRNms2REkxZ1V5cU9VeEkzb0dIVVNQcjE1M2VuUUNoN0c3Q09XWmxpeDE4LUxnZHZmcW1kZHZsLXRMejl1MmVUcUZkQ3REN1JucG9yTFFKX2lBN005emhsZ0RBR1ZpQTF0UFFHc1Vua01fQk5LTkljbU5EdTlsOUtjQWhxRjJiX0dlbzhvZWZYWC02ZEZjd1dlT3ZYSTJMeWp6M2twZkQ3bW5DM0Frb1JWUQ?oc=5" target="_blank">Data Center Resistance: A Good Ground Game Can Help Stop the Corporate AI Offensive - mronline.org</a>
-            </h3>
-
-            <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-17 — 🌍 Global
-            </p>
-
-            <div class="entry-summary">
-                <p>Summary:
-The project in question is a data center expansion and resistance effort aimed at countering corporate AI initiatives, particularly those from large technology companies. The company behind this initiative is not explicitly mentioned, but it is described as being supported by "Good Ground Games," suggesting it is part of broader efforts to mitigate the impact of AI on traditional industries.</p>
-<p>The project proposes to build a new data center in an undisclosed location, likely in a region with favorable geological and environmental conditions. The expansion is expected to cover 10MW of power capacity, which will be supported by renewable energy sources, primarily solar and wind, to reduce its carbon footprint. Additionally, the project includes improvements to cooling systems to enhance efficiency without compromising data center performance.</p>
-<p>From an AI readiness standpoint, the project showcases a high level of AI sophistication through advanced algorithms for optimizing energy consumption, ensuring that AI infrastructure operates at peak efficiency while minimizing environmental impact. This suggests it is designed with AI in mind from design to operation.</p>
-<p>The strategic implications of this expansion are significant, as it represents a shift towards sustainable and resilient data center operations. By focusing on renewable energy sources and improving cooling systems, the project aims to position itself not just as a competitor but also as a leader in environmentally responsible tech infrastructure.</p>
-            </div>
-        </div>
-        
-        <div class="entry">
-            <h3 class="entry-title">
-                <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQU0xRWF9kM2NrT1hTeEU5M2pRd0czcUR3VnRHdkZWakJRbjZ5cDkwTjRwbnVSWkc0N0pwM3poOEgyRjFYWFNZdF9xTnhsVS1weHJmdklWZk52TEMzSWMtY29nN3pPZ29QdFNvdjNBQ195S1BMVFIwd1RrWThkbWlpWUM3NUVGWXRFd1RaMVZaVUNCQzdyRUIzMDR0Vk9keGYz?oc=5" target="_blank">AI data center revolution sucks up world’s energy, water, materials - Mongabay</a>
-            </h3>
-
-            <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-14 — 🌍 Global
-            </p>
-
-            <div class="entry-summary">
-                <p>Summary:
-This project is an ambitious expansion of a leading global data center company, focusing on the development of an AI-driven infrastructure. The project will involve significant investment in renewable energy sources, including solar and wind power, to ensure minimal environmental impact. The use of cutting-edge AI technologies will optimize resource utilization, significantly reducing water usage compared to traditional data centers. However, there is a concern about increased demand for cooling systems, which may lead to higher electricity consumption unless effective strategies are implemented.</p>
-            </div>
-        </div>
+        </article>
         </div></section>
-        <section class="section">
-            <div class="section-header" onclick="toggleSection('product--ecosystem')" style="background:#19A565">
-                🧩 Product & Ecosystem
-            </div>
+<section class="newsletter-section" id="product--ecosystem">
+    <div class="section-header" style="background:#18A367">
+        <span class="section-tag">🧩 Product & Ecosystem</span>
+        <span class="chevron">▾</span>
+    </div>
 
-            <div class="section-content" id="product--ecosystem">
-                <blockquote style="border-left:4px solid #19A565;padding:10px 15px;background:#F2FBF7;color:#444;">
-                    Major AI model, product and framework announcements.
-                </blockquote>
+    <div class="section-content">
+        <blockquote style="background:#f4fefa;border-left:4px solid #18A367;
+        padding:10px 14px;border-radius:8px;margin-bottom:18px;">
+            Major AI model launches, product updates and developer tools.
+        </blockquote>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
-                <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOUjRLalpaaUU3MGN1RnJRekJHSDlHWFBoUG5NbWl0TUNSVkRZRndmel8tRTMydF9PVUtqUThESVQyR2I4aDItbkN4OFplZExZRlJFNFhaUjBIQ0dMMWxad2xUREwtbTl1VTIxd3FXam5jWWg3azFxS21GSVFGNkhaUUU3Yk9hVXQ4YURSaDcyekNLTVBQM1dhbnVDVXFjb09qbnhCVExvLV9nMnZFMmV5Mm5nd05ocGx0Zm1ZSw?oc=5" target="_blank">Ramp Valued at $32 Billion as It Gains Customers and Adds AI Agents - PYMNTS.com</a>
+                <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPSXEwOWFnV2tJRVVDNXpNUVM0aG96YWlxQlUzdC1rOUNIdkxxVnpRc3RVOTFNeWkyV05NaXRXajBLTzJ3S2xGSEM1ZENnUFRhb21FbG5WUm9NUnVXWTJVU3RYSlZCZEQxSm1ENXUwRDE3V0RRT2JKdkVhSWpMUjZNQkxfMkdDcGlTQ2hyYmtYUlptaURQQXgxeDRpZk9uZTMzYjR3M3JmQTk1LU5YOWlGQVlyOVgwOXZZLWhPRUFB?oc=5" target="_blank">Ramp Valued at $32 Billion as It Adds Customers and AI Agents - PYMNTS.com</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-17 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-17 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-Ramp, a digital payment processing company valued at $32 billion, has expanded its customer base significantly by adding advanced AI agents. This move positions Ramp as a key player in the digital payments sector and demonstrates the growing importance of artificial intelligence in financial services.</p>
+Ramp is valued at approximately $32 billion, marking a significant milestone. The company has successfully expanded its customer base and integrated advanced artificial intelligence agents to enhance the overall user experience. This expansion underscores the growing importance of AI-driven technologies in financial services.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOUTMtMEFXV2Mwa2hFSFVsaHNRbURUQ0MzbVJWajhMWWstV25xNGhHY0U1QVBGbVJ2VTM3WjJ2VGZwUVN1cGVmTGlCR1puTVRaUVhyYXk3WTRzRy1iWGtTSWNLN0k1MnFfN2lhZm1mTmt6M0R0MUpwaXJDWW9aR0s0cmJMMS1aXzVfRVQtYXpERV81cHRuV04wT0ZyTGV0X3pTNzF1b20yRXdwRDBsdzlHYQ?oc=5" target="_blank">Google Debuts Private AI Compute System for Gemini Models - PYMNTS.com</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-13 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-13 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-Google has unveiled its new private AI compute system designed specifically for training the Gemini models, a cutting-edge neural network architecture developed by Alphabet. This initiative highlights advancements in private computing and artificial intelligence infrastructure, marking a significant step forward in both the technology and regulatory landscapes.</p>
+Google has announced the launch of a new private AI compute system designed to support "Gemini" models, marking an advancement in the field by providing a more efficient and private platform for artificial intelligence research. This development is significant as it addresses privacy concerns while enabling researchers to work with larger datasets.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
+            <h3 class="entry-title">
+                <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNVkJoSngyWVNWeFNVYmN4LWN2VXhBQ2lkOGM4cE9JQWtSanlhZHVNUDB2RTRSRk1KZkt3Nlg4ZXYyQzRsTGhfQlp5OHh6SnJqdnNrQU04U2xKLXZsZ3l6NzA2VVdzbDVDcUxHQU5sU1VjWExJX2k4QmpvUWh4cVpJcUVYMUxBUTdWZmdqdWFCX2k1TENMRTU4Y0h3?oc=5" target="_blank">Oddball AI assistant will make the future feel like the past - Android Police</a>
+            </h3>
+
+            <p class="entry-meta">
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-18 · 🌍 Global
+                </span>
+            </p>
+
+            <div class="info-card">
+                <h4>Summary</h4>
+                <hr />
+<p>Summary:
+In a fascinating development, a new AI assistant called "Oddball" is set to debut in 2025. Unlike conventional assistants, Oddball will function without needing updates or continuous access to the internet. This revolutionary technology could drastically change user experiences and privacy concerns.</p>
+            </div>
+        </article>
+        
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxONkNySENzR05RM09pN2h0dndQdW12NG8zY1RoR3ZRbGkxOTcxY2VTSnBELW1USHFUVjBaYU14SVZyQmdMVlN1MFZXNUdMWlgzTGYtSzctbGdmWEdBTHVrcWMwYndXci1Ca3lTaktRMExYVDdqOGlRZ1JpZkxlUVRrdE1LRWc4WElQNDJ6aFpnakxGNURxVENaZzNvSHRsNGpudGFhb0tZV1dvVWEzUVBBM0otd0ZnWGdLNk9kbVh4X1pNQm9zeHlUc0ZkdHfSAcwBQVVfeXFMTVh1YnlRUktYTVZRSWNka3NWblNhM0x1Ti1QWDhSUzF5b3pxTFBiME5FWUNza1Nvdm9vRURyOVdtLXA4V29wUDg4Q2tZV1g3Sm1BWUxHRjJZODd0SFVrb1k4TFlMaXhoeUo0NTgydEhXa0tzZzZqRUZabVJjSXlaQzYwdUVYTGlhMkpWQXFSR0M1aGdYVnhINi03cDJ4R2dzMTEtQkpPSWgxSk40cHdma1pIZS0yQVJDR0VVMkxZX1VkSTlMLXhsb3F3Mmlu?oc=5" target="_blank">Ant Group unveils AI assistant that builds ‘flash apps’ in 30 seconds - South China Morning Post</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-18 — 🌍 Asia-Pacific
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-18 · 🌍 Asia-Pacific
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-Ant Group, Alibaba’s financial services arm, has announced the launch of a new artificial intelligence (AI) assistant called “Flash App” that can create simple applications in just 30 seconds. This groundbreaking technology uses natural language processing and machine learning to automate the development process, making it faster and more accessible for developers and businesses.</p>
+Ant Group, a financial technology firm, has introduced an AI-powered tool capable of creating "flash apps" with just 30 seconds' worth of code. This innovation promises to automate the development process for software applications using artificial intelligence.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
-            <h3 class="entry-title">
-                <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPQVBRcXBqeFZ0LWhGRUx6QXkyRV9wLXdWZ0UySnFXR1I2c0txdG85UUFwVXhiWkZURWZNMUVDWDdsSGw5YmYzVGVnSkxyMldrTHVuUnVrVjhBOUJscGRZSDIzVGNFSmxUVldqMFM5ajB6RHpqQ2F3cEI0c0Fia055TEd0eHNNWVRJOGxmRDRxajVCVmo1bzlaTy1YMmNzbHlvcVliZVNOSDM0cnVidEo0Rw?oc=5" target="_blank">Extreme plots enterprise marketplace for AI agents, tools, apps - Network World</a>
-            </h3>
-
-            <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-13 — 🌍 Global
-            </p>
-
-            <div class="entry-summary">
-                <p>Summary:
-A new platform is emerging that offers a centralized ecosystem for advanced AI applications and services tailored specifically for corporate environments. This marketplace, built by Extreme Technologies, includes AI agents, tools, and apps designed to streamline business processes and enhance decision-making capabilities. The initiative aims to simplify the integration of cutting-edge technologies into enterprise workflows.</p>
-            </div>
-        </div>
-        
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPaWhWMjliRW5iSU5DRDhPdTlKUElHS2N1UTFIVVp5eXRIWm1sQnJBSVhIN1Z4bmJ5S2V4MXhmV094OVdza2xBUFpXb0ZxMDBZSjBwNG50RERPcW5nUDNyVTdpamxjcUk2cHNVTGdvaDNFeUZoQjhLd1p3QmR6QWFtU2tHWXdodzAyenZUbmQ3TVdJM05BUEFtUWNHV0dhU29ncVROU2J3?oc=5" target="_blank">Measuring and scaling AI agent value beyond productivity gains - cio.com</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-17 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-17 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
-                <p>Summary:
-A new research paper proposes methodologies to assess the total economic impact of artificial intelligence (AI) agents, which go beyond just enhancing productivity. This innovative approach quantifies various forms of value generated by AI agents across different domains and industries, providing a more comprehensive understanding of their overall contribution.</p>
-<p>Key facts:
-- A team at MIT has developed methods for measuring the full economic value created by AI agents.
-- The techniques consider intangible benefits such as social impact and environmental effects.
-- This research aims to provide a clearer picture of AI's broader societal contributions beyond traditional metrics like labor productivity gains.</p>
+            <div class="info-card">
+                <h4>Summary</h4>
+                <hr />
+<p>Summary: The article discusses a new approach to measuring and scaling the value of artificial intelligence (AI) agents beyond just improving productivity. It introduces a framework that considers broader business outcomes such as innovation, customer satisfaction, and employee engagement, alongside traditional metrics like cost savings and time efficiency.</p>
+<p>The new method uses AI-driven data analysis to quantify these additional benefits more accurately. The research team at Google claims this approach offers a deeper understanding of the true value proposition of AI in organizations, which is crucial for making informed decisions on where to invest further in AI adoption.</p>
+<p>This technology aims to shift the focus away from purely economic gains towards more holistic business objectives. The study suggests that companies can achieve higher long-term returns by integrating AI agents into strategic initiatives beyond merely automating repetitive tasks.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOZWhOa1ExRW1ta3VVVzNZR2NYcmIxRU1EYVU5eXFGTl9YclotbHZsQ0RpNU9EMU9YMFo3aUFDckh4cXVBUFhNS3NTd2RYZTN0M3E0ZmlYU2hkVGplYk9semdEd1lGWTJzdU1ZdEtfN2pIeEszRTkxVVo4a3k3ZlU5NlNaTFFoUDZ2MkxhOVhOUzEtaGtKc3hOZzlUNlFxOUVQQ2JPd1A1S1dieldyWWpZ?oc=5" target="_blank">New data centre projects mark Anthropic’s biggest US expansion yet - AI News</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-13 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-13 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
-                <hr />
-<p>Summary:
-Anthropic, a prominent research lab in the field of artificial intelligence (AI), is rapidly expanding its operations across the United States. The latest data center projects announced represent the company's largest expansion to date in America and underscore Anthropic’s increasing influence on AI development. These investments not only highlight Anthropic's commitment to advancing cutting-edge technologies but also position the lab as a key player in shaping future technological trends.</p>
+            <div class="info-card">
+                <h4>Summary</h4>
+                <p>Summary:
+Anthropic, the company behind the text-based AI model GPT-4, has announced significant expansions in its data centers across the United States. These new projects mark the largest expansion of Anthropic's footprint in the US to date, indicating a growing investment in technology infrastructure and expanding services globally.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
-                <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxOdFF2bEgzUDBzVVdJSkdNUU5yazBzU0RFX3c5SjhuMjRyd3dvY0Utd0xWcGNZODJ2bkRtRGN6UTFMUFJ1c2pyMjFQck1YNEFtUzNxT2FaU3E4ekNUYUtXVFdwZ0dKUjVUTUdOc2oyeXJnSlU5NGE3MkVjaVFPX3ctMWRJUzRZOGp6UW8wSk9qN2ZueEQ0czh6Zmg1bVR0VjM0YllXX0ppT0ZQd09LQWNsZ0xfd25RcGQxMi1PeWZn0gFaQVVfeXFMUGdhODUwb0llaGRwTmVXaDl3UDRzSHZRUERvSDlPWG9OR0NDd1I0emN6RVBSVVNZbEhTRXFpaHJXTTk2YTU1bzJOM1ZPd2dqdldMTnhXM0ZpdU9n?oc=5" target="_blank">Mercedes, Tesla become first foreign carmakers cleared for AI services in China - MLex</a>
+                <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQS2ZPVmZDa1ZMSkdiQ3ExbmtUSzIzbjhPOUxyMklMRWREeF9QMGhZYzRDdUtzS0JubEQteDZweUpnb0ppRU02NXBnZFBKQVpzX2dYeUxpbUQ2QjdSc3AwUEFMOTdFTGV0LXFmbnMzc0pWaFNweExKSWl0ZGVMSncwQ0ZBeFBablZqa2tfYm42dlM1Wjl5b3l5N2ROTzhTYk9GazUxVHFtU0dRbHM4azlic0d2Qk1FUGxFWVBsMHFmLVBhQXFSX2NaUXVwbjRDM2FrNkRvRmNuenBmZ0FqVFHSAVpBVV95cUxQZ2E4NTBvSWVoZHBOZVdoOXdQNHNIdlFQRG9IOU9Yb05HQ0N3UjR6Y3pFUFJVU1lsSFNFcWlocldNOTZhNTVvMk4zVk93Z2p2V0xOeFczRml1T2c?oc=5" target="_blank">Mercedes, Tesla become first foreign carmakers cleared for AI services in China - MLex</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-18 — 🌍 Asia-Pacific
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-18 · 🌍 Asia-Pacific
+                </span>
             </p>
 
-            <div class="entry-summary">
-                <p>Summary: 
-Mercedes-Benz and Tesla have been granted permission by the Chinese government to offer fully autonomous driving software on their vehicles, marking a significant milestone in integrating advanced AI technology into global car manufacturers. This breakthrough is particularly noteworthy as it paves the way for more widespread adoption of autonomous features across international markets.</p>
-<p>The clearance allows Mercedes and Tesla to start offering self-driving capabilities to passengers, potentially revolutionizing road safety by reducing human error significantly. The move reflects China's increasing focus on innovation and technological leadership, signaling a shift towards more regulation-friendly practices compared to traditional Western models.</p>
+            <div class="info-card">
+                <h4>Summary</h4>
+                <p>Summary:
+Mercedes-Benz and Tesla have been granted the authority to offer autonomous driving services in mainland China after undergoing a two-year review process, making them the first foreign carmakers permitted to deploy such technology in their vehicles. This move is significant as it opens up new markets for these automakers and demonstrates China’s evolving regulatory approach towards artificial intelligence integration into automobiles.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE00SWJVT2RIVW5MblE0Z04xb0xYQWhRSTV0Ukg1ZHQzenZ4ckI2ZmQtbXdILTNCN25tVnFOa2RPbTAtZ2ZRVldyeFlGMGJXbnJjTzI1dG50eUJLOGlXa1kwTXhZMGF4YjI1Q3pTVG5XSVk3RlBIX2JmSEJzdEJUQQ?oc=5" target="_blank">Google Launches 'Private AI Compute' — Secure AI Processing with On-Device-Level Privacy - The Hacker News</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-12 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-12 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-Google has introduced "Private AI Compute," a new initiative that allows companies to process their own artificial intelligence (AI) workloads on-premises with enhanced privacy. This technology encrypts and processes sensitive data within Google’s facilities, ensuring higher security compared to cloud-based alternatives. The move reflects a growing emphasis on data sovereignty and privacy compliance.</p>
+Google has launched a new initiative called "Private AI Compute," which focuses on secure and privacy-preserving artificial intelligence (AI) processing. This technology enables users to run AI models locally, ensuring that sensitive data remains within their own networks without being transmitted over insecure channels. The innovation is aimed at enhancing privacy and security in the rapidly growing field of AI by reducing reliance on cloud services.</p>
             </div>
-        </div>
+        </article>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPU2gtX05zZVAxSHdONGkwaEJWcThXTS0tcW1mWi0zeEdRVlhwWmhheWxUbzA4SUY3S2p0TTYxcXNQMTcwV2VPZzF1cTZCVjNFMzFhd2wxZGdvd0lCV2U0WDVIWnhnazdhQml6ck5BQVVqTEhaZWNEZlBZWi1fOHNpck9IY3NYOFZ6dWE4SEN0MmxlUXJmOU1RRVU2RzlLa01iMkx6eXA1dXIxa1J0eTBJbGh0cGpqYUFHbWc?oc=5" target="_blank">The 1 Thing That Can Slow AI’s Growth — And 3 Stocks That Will Profit From It - 24/7 Wall St.</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-17 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-17 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
-                <p>Summary:
-AI development is facing a bottleneck as the cost of training large language models increases, impacting both tech companies and investors. As of the article's publication date in November 2025, this slowing down could lead to delays in AI advancements that depend on these expensive tools.</p>
+            <div class="info-card">
+                <h4>Summary</h4>
+                <hr />
+<p>Summary:
+The article discusses a single factor that could potentially slow the growth of artificial intelligence (AI). According to research, advancements in AI are expected to increase demand for computing resources and energy consumption, leading to higher costs. This challenge is highlighted by three stocks—Apple Inc., Intel Corporation, and Google LLC—which may profit from addressing these issues through improved efficiency and sustainability.</p>
             </div>
-        </div>
+        </article>
         </div></section>
-        <section class="section">
-            <div class="section-header" onclick="toggleSection('regulation')" style="background:#21BE76">
-                🏛️ Regulation
-            </div>
+<section class="newsletter-section" id="regulation">
+    <div class="section-header" style="background:#1FC47A">
+        <span class="section-tag">🏛️ Regulation</span>
+        <span class="chevron">▾</span>
+    </div>
 
-            <div class="section-content" id="regulation">
-                <blockquote style="border-left:4px solid #21BE76;padding:10px 15px;background:#F2FBF7;color:#444;">
-                    AI policy, governance frameworks, and global regulatory changes.
-                </blockquote>
+    <div class="section-content">
+        <blockquote style="background:#f4fefa;border-left:4px solid #1FC47A;
+        padding:10px 14px;border-radius:8px;margin-bottom:18px;">
+            AI governance, AI Act, compliance and national strategies.
+        </blockquote>
         
-        <div class="entry">
+        <article class="newsletter-entry">
             <h3 class="entry-title">
                 <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxPMTkzcjF5bEpfS1NzMExYZjNicHpnRzMwaFpjZjRVa1FYckdUYjUtUk5Hb2o5QVdwS0xWbkN4SDhiN09IWURzMGw3YlpRQ3N3MXlGdFI2X25qUUQxYkFaWHh3dF9xcHY3aUk1STFqMm9aM1JEZjR6OVhMMkNhVWYxcXJ6YWx4MDRXOHRub3BYQjdGRlhfOUJ0aXA0Yld5UXc0Tl9WZkNVdHE2enFfcnlZd1FUQkdvb0hRTDc5Xw?oc=5" target="_blank">How MCP Turns Passive AI Assistants Into Active Enterprise Agents - PYMNTS.com</a>
             </h3>
 
             <p class="entry-meta">
-                🧠 <strong>Google News</strong> — 2025-11-13 — 🌍 Global
+                <span class="pill-row">
+                    🧠 <strong>Google News</strong> · 🗓️ 2025-11-13 · 🌍 Global
+                </span>
             </p>
 
-            <div class="entry-summary">
+            <div class="info-card">
+                <h4>Summary</h4>
                 <p>Summary:
-A leading provider in artificial intelligence and enterprise technology, MCP has developed a new approach to turning passive AI assistants into active agents that can proactively engage with businesses. This involves integrating advanced contextual understanding techniques alongside the company's existing platform to create dynamic, personalized interactions. The key advancements are in real-time data analysis, micro-behavior modeling, and continuous learning algorithms that enable these AI agents to adapt to various business environments and user preferences. MCP aims to streamline customer service, improve operational efficiency, and enhance overall employee experience through this transformation.</p>
+Innovative company MCP is transforming passive AI assistants into active enterprise agents by implementing a dynamic AI framework. This shift enhances productivity and efficiency, enabling businesses to better understand customer needs and engage in more personalized interactions.</p>
             </div>
-        </div>
+        </article>
         </div></section></main></body></html>
