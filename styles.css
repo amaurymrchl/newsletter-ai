@@ -387,3 +387,47 @@ a:hover {
     color: #666;
     margin-top: 10px;
 }
+
+.section-content {
+    max-height: 5000px;
+    overflow: hidden;
+    transition: max-height .35s ease;
+}
+
+.section-content.collapsed {
+    max-height: 0;
+}
+
+.collapsible {
+    cursor: pointer;
+    transition: color .25s ease;
+}
+
+.collapsible:hover {
+    opacity: .8;
+}
+
+.section-gradient-research { --section-color: #005944; }
+.section-gradient-cloud { --section-color: #0B7F5D; }
+.section-gradient-hardware { --section-color: #2CA175; }
+.section-gradient-infra { --section-color: #5FC89E; }
+.section-gradient-product { --section-color: #8FE9C1; }
+.section-gradient-regulation { --section-color: #CFFAEA; }
+
+.newsletter-section h2 {
+    color: var(--section-color);
+    border-bottom: 3px solid var(--section-color);
+    cursor: pointer;
+}
+
+.section-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
+}
+.section-content.collapsed {
+    max-height: 0;
+}
+.section-content:not(.collapsed) {
+    max-height: 5000px;
+}
