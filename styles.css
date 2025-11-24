@@ -412,7 +412,7 @@ a:hover {
 .section-gradient-hardware { --section-color: #2CA175; }
 .section-gradient-infra { --section-color: #5FC89E; }
 .section-gradient-product { --section-color: #8FE9C1; }
-.section-gradient-regulation { --section-color: #CFFAEA; }
+.section-gradient-FundRaising { --section-color: #CFFAEA; }
 
 .newsletter-section h2 {
     color: var(--section-color);
