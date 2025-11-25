@@ -431,3 +431,12 @@ a:hover {
 .section-content:not(.collapsed) {
     max-height: 5000px;
 }
+
+.entry-tag {
+    background:#DFF3E8;
+    padding:3px 8px;
+    border-radius:6px;
+    font-size:0.82rem;
+    color:#0A6B47;
+    font-weight:600;
+}
