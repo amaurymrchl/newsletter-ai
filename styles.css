@@ -414,11 +414,6 @@ a:hover {
 .section-gradient-product { --section-color: #8FE9C1; }
 .section-gradient-FundRaising { --section-color: #CFFAEA; }
 
-.newsletter-section h2 {
-    color: var(--section-color);
-    border-bottom: 3px solid var(--section-color);
-    cursor: pointer;
-}
 
 .section-content {
     max-height: 0;
