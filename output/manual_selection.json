@@ -1,6 +1,28 @@
 [
   {
     "source": "Hugging Face",
+    "title": "T-pro 2.0: An Efficient Russian Hybrid-Reasoning Model and Playground",
+    "summary": "",
+    "link": "https://huggingface.co/papers/2512.10430",
+    "date": "2025-12-12",
+    "tags": [
+      "Research"
+    ],
+    "region": "Europe"
+  },
+  {
+    "source": "Hugging Face",
+    "title": "Long-horizon Reasoning Agent for Olympiad-Level Mathematical Problem Solving",
+    "summary": "",
+    "link": "https://huggingface.co/papers/2512.10739",
+    "date": "2025-12-12",
+    "tags": [
+      "Research"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "Hugging Face",
     "title": "OPV: Outcome-based Process Verifier for Efficient Long Chain-of-Thought Verification",
     "summary": "",
     "link": "https://huggingface.co/papers/2512.10756",
@@ -12,9 +34,9 @@
   },
   {
     "source": "Hugging Face",
-    "title": "MoCapAnything: Unified 3D Motion Capture for Arbitrary Skeletons from Monocular Videos",
+    "title": "Achieving Olympia-Level Geometry Large Language Model Agent via Complexity Boosting Reinforcement Learning",
     "summary": "",
-    "link": "https://huggingface.co/papers/2512.10881",
+    "link": "https://huggingface.co/papers/2512.10534",
     "date": "2025-12-12",
     "tags": [
       "Research"
@@ -23,31 +45,9 @@
   },
   {
     "source": "Hugging Face",
-    "title": "From Macro to Micro: Benchmarking Microscopic Spatial Intelligence on Molecules via Vision-Language Models",
+    "title": "BEAVER: An Efficient Deterministic LLM Verifier",
     "summary": "",
-    "link": "https://huggingface.co/papers/2512.10867",
-    "date": "2025-12-12",
-    "tags": [
-      "Research"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Hugging Face",
-    "title": "VQRAE: Representation Quantization Autoencoders for Multimodal Understanding, Generation and Reconstruction",
-    "summary": "",
-    "link": "https://huggingface.co/papers/2511.23386",
-    "date": "2025-12-12",
-    "tags": [
-      "Research"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Hugging Face",
-    "title": "Thinking with Images via Self-Calling Agent",
-    "summary": "",
-    "link": "https://huggingface.co/papers/2512.08511",
+    "link": "https://huggingface.co/papers/2512.05439",
     "date": "2025-12-12",
     "tags": [
       "Research"
@@ -67,28 +67,6 @@
   },
   {
     "source": "Hugging Face",
-    "title": "StereoSpace: Depth-Free Synthesis of Stereo Geometry via End-to-End Diffusion in a Canonical Space",
-    "summary": "",
-    "link": "https://huggingface.co/papers/2512.10959",
-    "date": "2025-12-12",
-    "tags": [
-      "Research"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Hugging Face",
-    "title": "Stronger Normalization-Free Transformers",
-    "summary": "",
-    "link": "https://huggingface.co/papers/2512.10938",
-    "date": "2025-12-12",
-    "tags": [
-      "Research"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Hugging Face",
     "title": "The FACTS Leaderboard: A Comprehensive Benchmark for Large Language Model Factuality",
     "summary": "",
     "link": "https://huggingface.co/papers/2512.10791",
@@ -99,57 +77,14 @@
     "region": "Global"
   },
   {
-    "source": "Hugging Face",
-    "title": "Tool-Augmented Spatiotemporal Reasoning for Streamlining Video Question Answering Task",
+    "source": "Anthropic",
+    "title": "These classifiers filter the overwhelming majority of jailbreaks while maintaining practical deployment. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak discovered.",
     "summary": "",
-    "link": "https://huggingface.co/papers/2512.10359",
+    "link": "https://www.anthropic.com/research/constitutional-classifiers",
     "date": "2025-12-12",
     "tags": [
-      "Research"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Hugging Face",
-    "title": "MoRel: Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification",
-    "summary": "",
-    "link": "https://huggingface.co/papers/2512.09270",
-    "date": "2025-12-12",
-    "tags": [
-      "Research"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Hugging Face",
-    "title": "ReViSE: Towards Reason-Informed Video Editing in Unified Models with Self-Reflective Learning",
-    "summary": "",
-    "link": "https://huggingface.co/papers/2512.09924",
-    "date": "2025-12-12",
-    "tags": [
-      "Research"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Hugging Face",
-    "title": "H2R-Grounder: A Paired-Data-Free Paradigm for Translating Human Interaction Videos into Physically Grounded Robot Videos",
-    "summary": "",
-    "link": "https://huggingface.co/papers/2512.09406",
-    "date": "2025-12-12",
-    "tags": [
-      "Research"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Hugging Face",
-    "title": "Fed-SE: Federated Self-Evolution for Privacy-Constrained Multi-Environment LLM Agents",
-    "summary": "",
-    "link": "https://huggingface.co/papers/2512.08870",
-    "date": "2025-12-12",
-    "tags": [
-      "Research"
+      "Research",
+      "Anthropic"
     ],
     "region": "Global"
   },
@@ -178,59 +113,25 @@
     "region": "Global"
   },
   {
-    "source": "Anthropic",
-    "title": "Nov 4, 2025AlignmentCommitments on model deprecation and preservation",
+    "source": "Amazon Web Services (AWS)",
+    "title": "Create AI-powered chat assistants for your enterprise with Amazon Quick Suite - Amazon Web Services (AWS)",
+    "summary": "Create AI-powered chat assistants for your enterprise with Amazon Quick Suite  Amazon Web Services (AWS)",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTW80Y0J3Y1dLQ0xFbHBhR3F5VVp4emR3ZlNHNFQ5YklEdHY2amk1UXZGZS1sbHFtbmtsbXRFX2xBR0x3VGhzNXFpRURuaFVObGlCb2pMam5tNEFmaFhWUERIc0pGN1E5UWg2YUZ2UUFPcFVRc1JhMnZaRjRVX0lqaEphVGxyVGpEeVAxN3g0SGZIRnlIV21vMUhDYWRaX095WVRLVGszWW41SnBKUXhVaWxhekFqU0RSRG1CX1FiMi1tdw?oc=5",
+    "date": "2025-12-09",
+    "tags": [
+      "Cloud"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "Meta FAIR",
+    "title": "Learn More",
     "summary": "",
-    "link": "https://www.anthropic.com/research/deprecation-commitments",
+    "link": "https://ai.meta.com/blog/open-sourcing-ax-and-botorch-new-ai-tools-for-adaptive-experimentation/",
     "date": "2025-12-12",
     "tags": [
       "Research",
-      "Anthropic"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Anthropic",
-    "title": "Oct 14, 2025PolicyPreparing for AI’s economic impact: exploring policy responses",
-    "summary": "",
-    "link": "https://www.anthropic.com/research/economic-policy-responses",
-    "date": "2025-12-12",
-    "tags": [
-      "Research",
-      "Anthropic"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Fierce Healthcare",
-    "title": "Athenahealth integrates Dragon Copilot AI assistant as Microsoft moves deeper into ambulatory care - Fierce Healthcare",
-    "summary": "Athenahealth integrates Dragon Copilot AI assistant as Microsoft moves deeper into ambulatory care  Fierce Healthcare",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPb2VkNl9sNzlxeFV1V0JQZS0xU2w4Nk5SNHpNczlaeGhQS0xsTVF5c0FXUnhNWDVoLTZsVnp4Yk1xUzNMQ2pqZWU5TzA5RmZsZzZEc2ZjWG5ScmxkQ2dOcEs1QlU4Z1V5MHlueFhybHNPUVRfZExlSFhfX1BzTV9pem5oNS00TmZIMVJObExfVi1qV2QzLS1XUHdrR0J1M29KekZzekxoMUNoUEFBaE5fbV91Uko1NjJkLXVlSEhocEstRFFiM0Y4eThnQQ?oc=5",
-    "date": "2025-12-10",
-    "tags": [
-      "Product & Ecosystem"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "PYMNTS.com",
-    "title": "AI Agents Shift Power From Marketing to Metadata - PYMNTS.com",
-    "summary": "AI Agents Shift Power From Marketing to Metadata  PYMNTS.com",
-    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPeWFJZjRzd2lxV3VZUlhxYmc5U0EzemVqaGNEc0wxMW96cGx6ODUweGgyc05UX29HLThlb2hYRGhiTy0tNUJNMGJncWQ5a040aVluQnBfbDV3NU5FLXZXRFo5LWJlc05SUGR1MDBWWGk1ckN1UnNCRHVfejFKZUlGT1ZNZV9BWVVTTWtjd3JpbWdBeG5aYUV3UzZlM1JXZ2tjeGxwUlhB?oc=5",
-    "date": "2025-12-12",
-    "tags": [
-      "Product & Ecosystem"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Nature",
-    "title": "Artificial intelligence agents for biology - Nature",
-    "summary": "Artificial intelligence agents for biology  Nature",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zRHZWOFpJRWlvUGdDSzdKdEV4azV4cFpWNVQtRXR4bFE3MTdkM2FTTlVSMUVkYUVSaDNsMFV2N1R5ZjZzZEUtQUlYNFF6OHhsMXRPMDdrMk14NkZMcUxz?oc=5",
-    "date": "2025-12-08",
-    "tags": [
-      "Hardware"
+      "Meta FAIR"
     ],
     "region": "Global"
   },
@@ -244,83 +145,6 @@
       "Product & Ecosystem"
     ],
     "region": "North America"
-  },
-  {
-    "source": "AI News",
-    "title": "Perplexity: AI agents are taking over complex enterprise tasks - AI News",
-    "summary": "Perplexity: AI agents are taking over complex enterprise tasks  AI News",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQXVVdlJVc1VJOEc3UUJvNVNLNTJkSDlfS2tVbU1ES01jZlk3TGdESUF3c2FNelgyN1V0Q3lzUXJpcEdNenpxR3l0RkZxQm9NTXVKOVdzR3VQc2RhNkRHaDN6a1B0Ylg1T3poM3h4UnF1ajQzTjNlci1xMXdPbC13ckQ5aEtFOEtGUnBfSENSOThSZU9GU0IxellYYTNaR2V4Z20yQXpiWnpfazA?oc=5",
-    "date": "2025-12-10",
-    "tags": [
-      "Product & Ecosystem"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Markets Financial Content",
-    "title": "Oracle Corporation (NYSE: ORCL): A Deep Dive into its AI-Driven Cloud Transformation - Markets Financial Content",
-    "summary": "Oracle Corporation (NYSE: ORCL): A Deep Dive into its AI-Driven Cloud Transformation  Markets Financial Content",
-    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQdV9HMGdNRzBsUF9GXzFkUXBFaUpMWGZsQy1OWnpvY2dnUlFpcmFZeEp3c0tRclZSX2YzM3d6eWJFN3lUWHFXT2hYR1hDYlNyRlgybFc2ZEhWY3h0ZVBRR3d0U0d2YTJCWW1fWUN4NDAyM0FzUkdhemVHYmxvM0EwNEdvRjgxaDhsNnZaeEI1VnV5TW9QSUlKUmt1bGFwcGZuejNkR2trOVR6d3BGOWJfWEtQakVTWTQwM3Y2cnJfbzlERzFyRnBGX0tOZjdjd0U2bWxpR0pPb3A5ZzNhTGhUYkhuWnNCZUtkdGhr?oc=5",
-    "date": "2025-12-12",
-    "tags": [
-      "Cloud"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "PYMNTS.com",
-    "title": "BNY Mellon Expands Eliza AI Platform With Google Cloud’s Gemini Enterprise - PYMNTS.com",
-    "summary": "BNY Mellon Expands Eliza AI Platform With Google Cloud’s Gemini Enterprise  PYMNTS.com",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVWZLa3dwOFBjZXNZMmJuaDJGVkdodWljdXJnWmg3ZnphWkUySUp3UUVxQVYtNW5UVGxSVFRDYjljRlF2djlHNjl3Y1hEcUlHNC1GNGVmbkpBRzBnOUtNd19rRW9yZFBpR2pGNXpEcUJFRG4yTnY0a0lQNzl5blMtYjU0bktpUmlsR2RpaWQtUUh5dlJIRlZDQmRDeXRpTUFaRVd2cFR1dXF5bXE0SUVPTFRlWG83aHBETEhwcnFPYTJ6YnlwRFBz?oc=5",
-    "date": "2025-12-09",
-    "tags": [
-      "Cloud"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Markets Financial Content",
-    "title": "Microsoft Corporation (MSFT): Navigating the AI Frontier with Cloud Dominance - Markets Financial Content",
-    "summary": "Microsoft Corporation (MSFT): Navigating the AI Frontier with Cloud Dominance  Markets Financial Content",
-    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNeTF3Qm9JNWVOakZtQnA1ZWx2ZmFfM0F2dFptTkdhLWdhcnZVT0Y3cmQ5OFd1aU5IOV9aYlFKYmQ1TWN0VVp3VDNZeGtpNmR0OU9rakdfSFNBOG5aazNFZzZQYTVEN1plMzE5d1hOeE5zUDgzbzFObXRxWWV0bGpMLWlENVpKOXJoM1ZtWFc2VDFZaHhBb0pJeWZYZlhGWnZ1X1ZqOGVUUVc2cEwzVnlyZFVvYlpuS1BYeE1ZZXBMQnZDTkU1aDJfdWp1SEJ4NVZxbkdnSEh4bVhBN190MjV2Uk1USQ?oc=5",
-    "date": "2025-12-12",
-    "tags": [
-      "Cloud"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "CNBC",
-    "title": "‘Greetings, earthlings’: Nvidia-backed Starcloud trains first AI model in space as orbital data center race heats up - CNBC",
-    "summary": "‘Greetings, earthlings’: Nvidia-backed Starcloud trains first AI model in space as orbital data center race heats up  CNBC",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPc0dqMzBsV2hyWE51aTk5bXhaN1RBeldKbDB4R0VWaGFoalJEMUZOekdmQnNoWmRuY0k2c1gza3JPUnpzNS1Hc3VXbnhFaEF0Um51dzFSUC0zTnZVLUZCaVJWQ3F3aERYdUFad3JtRGE1WWdHc0xlWlprLVp3Qk9zeHprZnNiNldHc3lEVlBRR3hUbFNRY1pwcEtoeHpneU15dzd1c1BFZlE2ZFdhcEhBNVh30gG3AUFVX3lxTE9weExybGFickkxYWZlQkM0M1R5cjBWQ05hZWRVM0dRR0pMOF9fLUtBeHEyeEhzalQwWnowS0JqeU9DOHlTeEV2YWNOaEMzSFdHbGZlVHJLY3Z5UmR3TTByTTc1c1hrTi1VNTAxUmJmNzBlQWJJSjNwbDR0WmNkYVNkTjhNdTJERHhMajV2ODBITXN0dXQteHBGTWV0MVhsM3hadjhOLVN5X3h2dnBsVFRuR3FJMnczTQ?oc=5",
-    "date": "2025-12-10",
-    "tags": [
-      "Infra & Datacenters"
-    ],
-    "region": "North America"
-  },
-  {
-    "source": "Tech in Asia",
-    "title": "Taiwan opens new cloud center to support its sovereign AI plan - Tech in Asia",
-    "summary": "Taiwan opens new cloud center to support its sovereign AI plan  Tech in Asia",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRk4wS2tTZ1hKSzUtRTNQV0JHMVBZdzJvc0tEY3RQVDVFd2RZNEF6aDRDTDhWbTl0Y3A3RWs3Z1RhS1Q4MmpaVzBMbGxNeDdVNm5EUEJ6YlEyTHVqR0hIQVRULVlldEI1cE9zRmZrR2dHeTVBaEp4UjN4LU5SR3ZIa241MURMenJFaTRJ?oc=5",
-    "date": "2025-12-12",
-    "tags": [
-      "Cloud"
-    ],
-    "region": "Asia-Pacific"
-  },
-  {
-    "source": "Google Cloud Press Corner",
-    "title": "Chief Digital and Artificial Intelligence Office Selects Google Cloud's AI to Power GenAI.mil - Google Cloud Press Corner",
-    "summary": "Chief Digital and Artificial Intelligence Office Selects Google Cloud's AI to Power GenAI.mil  Google Cloud Press Corner",
-    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSlNGZVJsX1l5TzBiU2QwOUZCOEZfT0FVUGV4TkJWY19wdHFOZnpCYWVFcy0yOTI0X2RHdGJ3d3cwRVhOMzZWNzA5YzE0TzY5WjNUN0piTHdmcTBMOXlaQmUtSl9hejQwN2l0bkFKcWRGMWpxT2pCUlFVcGV2UFlJMWExRTFrRENhcU9WZ2ZCMGRhbU03TnFOWmpkTUZidzJTMnZCMFF5c1RxMG9TcnhIQWZaWS1haTlwQlg2a09XRXJENXU4a3VWT1oteW11R043VXZyV3ZuS2tmUQ?oc=5",
-    "date": "2025-12-09",
-    "tags": [
-      "Cloud"
-    ],
-    "region": "Global"
   },
   {
     "source": "Microsoft Source",
@@ -345,43 +169,10 @@
     "region": "North America"
   },
   {
-    "source": "Morocco World News",
-    "title": "Morocco Accelerates AI Strategy With New Regulations, JAZARI Institutes and Sovereign Cloud Push - Morocco World News",
-    "summary": "Morocco Accelerates AI Strategy With New Regulations, JAZARI Institutes and Sovereign Cloud Push  Morocco World News",
-    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOb0dNZjRlVldPSTY0d0FfREE3YkFCWmtJZWZtQU5tZlowSXFfSzJMaE1WY1pmeXpLdTI2dmk3SWxXbWFJSi1RekZwQWVUVEhfbExPR1hSbC11eDNyRnp1dUF0cEdYNDByQjBiTkZhMFNZRDM0MjM4MXV1bEpDQW5laG9raHlud3dLOHFKaVFHc2VnTGU2a1JmTU5BRF9ucnlfa0VQN2FULThoUkdvWmRkUGNGZUZEb2FMcmFOcVAyWWtVSllBWDZDbnVJTUVLS2NrYTVvWW10MGxKNnR6?oc=5",
-    "date": "2025-12-11",
-    "tags": [
-      "Cloud"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "The Straits Times",
-    "title": "Taiwan opens new cloud centre to bolster ‘sovereign AI’ effort - The Straits Times",
-    "summary": "Taiwan opens new cloud centre to bolster ‘sovereign AI’ effort  The Straits Times",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUi1NSVlMZXdBNi0yb01jMF96WWZjcG5FRHFpUzdNT25ZSF92TFBEWHRVLXdXekRfd00zUDlRVnB4S0ZMWlJwUnpkQlRJWmJtY0NOSnhENEU4aDZMelE1b25idGFuUGFZXzFWZXdqdmVsZkhyQWlJdVhuRDVZSjVhVXBWZXR2YzdDc1cxblVteDlmZlk3a2NWaWNLWlNkaTJGVENPMlpTVQ?oc=5",
-    "date": "2025-12-12",
-    "tags": [
-      "Cloud"
-    ],
-    "region": "Asia-Pacific"
-  },
-  {
-    "source": "Bloomberg.com",
-    "title": "SoftBank’s Son Eyes Data Center Group Switch to Expand in AI - Bloomberg.com",
-    "summary": "SoftBank’s Son Eyes Data Center Group Switch to Expand in AI  Bloomberg.com",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUkdhRXMtQjVJOS1fRThGOVNxWmJZQXEzLTNTb05pTnoxNjRoRU1kbExFcDhLd2xjQU9ZanUwamZGaml0MGp0SHlzdFlIZ0czMWlUblpwZWZJSmxPRjRqM0Y0R3FYbGtzcVBrc21keHVodDlzZmhxWGJ5eTVrQTY5bS1YWktBM25IWktmYTZlMTNmYXFmbjFnRk1uQWs2VmRfS1pNQldLS1I5dlNWTW1QaUFybWhBdw?oc=5",
-    "date": "2025-12-12",
-    "tags": [
-      "Infra & Datacenters"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "ET Telecom",
-    "title": "SoftBank eyes data center group switch as Son hunts for AI - ET Telecom",
-    "summary": "SoftBank eyes data center group switch as Son hunts for AI  ET Telecom",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUHRzTWlJLThKdmR5STNfbGpSc195UzlIRzZxT2FIZzVKRnpHTE9mVWFPd3FwT05Zc19ucGFWYzdhMGpZblFTUEh1UmdHb0IwZUVjYlhveGtNZm1WRFJBS2VEdmJFa2xKR2RkMGhwME5nQjFwdTM4Y3c0Y2EzaFZDWHFRSkVYczhUWlJXc25raUI1dFlYVENFa3psV3VWQ25qVjhpSWhOajlHR0NvSWVCYnJMdjg5SGNseTJYZ2hrWnVURVZzZ3fSAcsBQVVfeXFMTmtldGFRbGk4dWJ1SkJsVldhRTVVN0o0N3NxVE13cUlDZGRPTFJwblZzbkhWVFlEd2Y5TnI3RWI4dkZlMkxhRmM5SEtIbVVjWWNMeVVGWXFsS21aMDczV1dpWjJnVnhwOXFzYXV6R2Q1emtibmE3cHRKT3h4WWRCOXp0WHRHT3I5ZEJHWWVWTHhhSnNVa0lHazl0R2JRR3FkUXJzX3MzeXhKTTNDcjF0bXR4ZjNtdXVlZWcwRGJLODdNOXNSY1I1S09FbEk?oc=5",
+    "source": "Nonprofit Quarterly",
+    "title": "The People Say No: MediaJustice’s Advocacy Against AI Data Center Expansion - Nonprofit Quarterly",
+    "summary": "The People Say No: MediaJustice’s Advocacy Against AI Data Center Expansion  Nonprofit Quarterly",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPczdReEtpeXVFdFRvcFdiXzlOUFdQSDQyVnBKbUFYdERIOFlZRHVDV05CMkZuX2pXbW9RRWg3bTVhRXNyVVVIVjljY0c5SnRVTkhGSW9HZ3hETU5fNGhrcF9DV0w2eWNsLWZMampnckFWWlAxZDJud3lUMUVSZDcyb0RkTnpmMTBBMkF2SkNldHJkUHBlOTF3bGd3YmFremRfX1lDeGxKbXk?oc=5",
     "date": "2025-12-12",
     "tags": [
       "Infra & Datacenters"
@@ -390,141 +181,53 @@
   },
   {
     "source": "Markets Financial Content",
-    "title": "Digital Gold Rush: AI Fuels Unprecedented Data Center Boom, Reshaping Global Economy - Markets Financial Content",
-    "summary": "Digital Gold Rush: AI Fuels Unprecedented Data Center Boom, Reshaping Global Economy  Markets Financial Content",
-    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQNzVDX09yMWUtUnQ3b1pJcXZvM0FFLXRrVVZZU19MSmMzWVlVb2UxdFlGTjM1cEUwWGRod01LbnRWaUVJOTNnQUh1dk5fWDFydVgtcXFfSGR6Zzl3THM3YzlOMmVlTTh4RTF2RmFLd2k5cDNqVjJIdzJXN1RTYUswMjNEWDRiRTRlYU5LWWdvZ2lhcmxBeDFVTFhjY0xSNGdWbE85TXdFWXZRR3BXOGxlcXBrV2VxdGtVQjVsa2RoLS03WnJhQUFLWkQ2amNDaDBiX09HNFlBcmNJNmxqb0lieXEySU00SlZsN2lF?oc=5",
-    "date": "2025-12-09",
-    "tags": [
-      "Infra & Datacenters"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "The Motley Fool",
-    "title": "Did Alphabet Just Say \"Checkmate\" to Nvidia? - The Motley Fool",
-    "summary": "Did Alphabet Just Say \"Checkmate\" to Nvidia?  The Motley Fool",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdXhuby15TmFQOFk5ZUhWUVBUTjZxYnhna1hNSWk2SzFBSWxDSlFaNWpib0xxQVYtazczY1UwR005bFJaN1RUMUhIZlllMnBuZWNXQXRTdzNMTUNXWGFQbHBLcVR6NmNRdjc5T2E4WW9tSVVreGhjMFlGZUhoejRHV0trY0lYVW5jcmd6Xw?oc=5",
-    "date": "2025-12-11",
-    "tags": [
-      "Hardware"
-    ],
-    "region": "North America"
-  },
-  {
-    "source": "Finimize",
-    "title": "Taiwan Unveils Nation’s Largest Supercomputer To Power AI Dreams - Finimize",
-    "summary": "Taiwan Unveils Nation’s Largest Supercomputer To Power AI Dreams  Finimize",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbzJKdjRvVmVxb3hnZzkwbkRJUVNuZmJJSzctNE1qamtNZ1V3ejg3SEU4T21fZTJkY0tKZ2tPUkM4N09QWkZuM3FSSlFISlhzYkE3Sl9WMFJfZzZhSWN2MWk3al9PaXBUckZUNFVxUUVlemVSaUdzZnIxUC1SX192UHpxYW9EOE9lY0h2QS1OVnYxR2dHWFl3?oc=5",
+    "title": "The AI-Driven Data Center Boom: Igniting a Domestic Semiconductor Manufacturing Revolution - Markets Financial Content",
+    "summary": "The AI-Driven Data Center Boom: Igniting a Domestic Semiconductor Manufacturing Revolution  Markets Financial Content",
+    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPUnREb3BOVkw0LTZJUVFQNVVaOEZNOXV5VmNZN3NZMnRoOUZOVWpCS1g1bVVpandaT0dJRDZwQkRxUzEtT3hEaUpzOGpNbngtM2J4a0JtM3o0clZfNG9CeGR0VXhRNUFCQXFrOG9vT09CdUM1cFYzakEtMTVKUHpUN3A5LTZ1cUxyYk9NRUZNbUNDWUV0Z255V2ZoNjViVkpoUFJ6Q3F5OHdaaXFxN0l1OWdnMDVRLWxFTDlsWXFubkt2b1ZaV1V6QUpsUDFxTUJHcUlqZ3NtUzBKcFc5WmFNeHBKa1p0Vll6OGg1N2NKcG0tUQ?oc=5",
     "date": "2025-12-12",
     "tags": [
       "Infra & Datacenters"
     ],
-    "region": "Asia-Pacific"
-  },
-  {
-    "source": "TweakTown",
-    "title": "This tiny personal AI supercomputer can run 120B AI models while fitting in your hand - TweakTown",
-    "summary": "This tiny personal AI supercomputer can run 120B AI models while fitting in your hand  TweakTown",
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbUhQREw0OFV0ci1WcTBFTzJ3NDhXaVBoeHJmWkxwTnZIaTZ3enRuWXprcHpkbzNMQ09FcHVOZGMzelRWYnhIeXd0T3hwMm9rSlVKck5sbE83ZXBHMlM2M0NsbEo1d25pTC0yamFpQWJaYTNOS0VVcnBMaWVpZTZ5Z1JtVExwNHd1UGNqOV9leVRPaTYtTEU5ZmNrMFFFc3VIa1g3SExGbWRNcUQ1S3liOHEyN1VzejJhQ1NsOUVtWDRva0dyaDQtaHhsNlV5Xzg?oc=5",
-    "date": "2025-12-11",
-    "tags": [
-      "Infra & Datacenters"
-    ],
     "region": "Global"
   },
   {
-    "source": "StartupHub.ai",
-    "title": "The smallest AI supercomputer runs 120B LLMs offline - StartupHub.ai",
-    "summary": "The smallest AI supercomputer runs 120B LLMs offline  StartupHub.ai",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRmN2M3UyQVBFNFVrV2pHYTZ6VE11cDR6VkRpcHdyanBlZ0ZRSVlab2ZjdHdXeDNudFZRV0M3bTA5MlNLYmV6ckU4Y2RHR3RDZWd1YmlFTzk2bC1Sd0FRdjE2dEJOVHVqZmNtOVE0azRXMkxOUHktMHdYZGx1WmF6MGZHSzJxNklVMGJsdDRTd1A2dHMwZ29lUkJqV3NFZlZ5N1hjc2xubHQxOHR1UVpUcTRFUGQ4b28?oc=5",
-    "date": "2025-12-10",
-    "tags": [
-      "Infra & Datacenters"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "The Palm Beach Post",
-    "title": "County, pressed by Arden residents, postpones decision on AI data center - The Palm Beach Post",
-    "summary": "County, pressed by Arden residents, postpones decision on AI data center  The Palm Beach Post",
-    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZmZFdnh2ZVc5ZGlRNFlCZEwxbHBXZmRrdmdOTkotYTY3bEFnSlUtOE5CelJTemxjekUxMWpZM3pMdmxyMlhpME4tZFlDcW5YZ1FlTGxsVF96RDcyZlQ1ZndqNDI0QVI1WkNoWGxpc29uLVdGYlplVzZoRGpkWUItSmlSQTVYaXNibDlvSWxWZV9mcVJxc2FaNWZOejBxZHYzcWR2Z3p2TDdMWFpseUdSMWRmNlduYV9NOUZCZXU2bG1DZXZNdEMyWW9JeG5OZUpxZlhvam9B?oc=5",
-    "date": "2025-12-10",
-    "tags": [
-      "Infra & Datacenters"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "NBC Montana",
-    "title": "Montana energy task force chair explains future power demand amid AI data center proposals - NBC Montana",
-    "summary": "Montana energy task force chair explains future power demand amid AI data center proposals  NBC Montana",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSUt2M0duQThXREZBN0tDdGVBaVZ2Mm8yZkticm43ek55bFAzVzl6cVRDQkE4WkRSTGp0NkJvQlkwWUd1ZXp4WTcwN3F6cFhUUDU1cHZ1QWc5cVhOWXVFc1NtX05aWkRhc2JJX1UyenRxMG8tcjVuQWVFRlREV3YwWEoyd1dMTjdVY2ttZXpDZ3dYb05icXF1eTNjSjFJVE5tSHI0d0RMRUQyWGZ0dFoyRUxYV0ZKVHN3ZXc?oc=5",
-    "date": "2025-12-10",
-    "tags": [
-      "Infra & Datacenters"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "TMForum - Inform",
-    "title": "Telenor AI factory partners with customers on sustainable architecture - TMForum - Inform",
-    "summary": "Telenor AI factory partners with customers on sustainable architecture  TMForum - Inform",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPb2pvLVYtb3BIN2xTTmJCZllwZEE1VUlaeXRzUVg4S1FzeEVJWVRJMWh0ZDdGNnFGV2dGamlUeXllbHN2d0Z6cE9PQ2l5dGF2QXF3cTdoMmFERmlVNnVQc19tck0tODkycVpwcFpVWHZ2RU9kcC05VUFsS2lSQnFaQjdpcDVFTmxRSW1hRmhXNzVqVHRCQmhZTmxlWXpqMjJSdWJvekw0V01sdG91bFNUSmtMVmg3eWZzd0E?oc=5",
-    "date": "2025-12-11",
-    "tags": [
-      "Infra & Datacenters"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Fox News",
-    "title": "Trump says every AI plant being built in US will be self-sustaining with their own electricity - Fox News",
-    "summary": "Trump says every AI plant being built in US will be self-sustaining with their own electricity  Fox News",
-    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdHFPWWhHY05WckluUzdVUTdMRlBaSlJrUDF4ODBHWmV3Rk1XdXhuRzF4NE55ck94YVJQNGhHWDR3MDdNN1RmaEN2V1k5dEpyY0JsQkpJN0VRN0VGZU1qWDdScF9BZUl1dU01NXFGMEsxLUE2RHNHSTJkMC1HWS1VMTFmNWVmSzZ5LTdfS1NsdE1MNE1TWml2Wm5IZndnY1hCeFpqMXI3bUXSAa4BQVVfeXFMTk1QZ2FnenJ5T3c2elVoMHdCaDRNZjZvbEs4YTF6WHRUaU9EZ3ZVRlBQdUxRQk5LdDZzeTBDakd1N00yQ1hlRm0tVUVKZGJwUFdlc1djdEZUYjJjVVpmdldCSzZyVGxxcUF5NXBveUl2R3QySV93RUMzVXlVbjlfNTZnY29YQXZzNGVhSnl3bElRVWtkV1JWb1RVZ1pzdlpyNnBkMVhNZmRWR2NxX1Rn?oc=5",
-    "date": "2025-12-11",
+    "source": "Utility Dive",
+    "title": "Trump wants ‘ONE’ national AI rule as states seek to curb impacts on energy costs - Utility Dive",
+    "summary": "Trump wants ‘ONE’ national AI rule as states seek to curb impacts on energy costs  Utility Dive",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNME8zR0NBY1gxcUFUa084NTlkbzhYUGFWWGpvOXFPTTR3T19UblpnajFKZjhfbHpoNTdYMFRWNEpRTE83WTIycHBfcjc0bG9oMzBGaklrT005MDhkLUFuTndxV3BhRWRHZlJ0S05KcTZzeTZxeTV2X0RzRHhyWDV0SGs3S28ycFBTUWZFMURkbnMyQ0pVQUlHZnVvZFd1QmtHU0JOQWhVYXRnZjE1MWxN?oc=5",
+    "date": "2025-12-08",
     "tags": [
       "Product & Ecosystem"
     ],
     "region": "Global"
   },
   {
-    "source": "Time Magazine",
-    "title": "The Architects of AI Are TIME’s 2025 Person of the Year - Time Magazine",
-    "summary": "The Architects of AI Are TIME’s 2025 Person of the Year  Time Magazine",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBHWll1bVA3Rk5HNXVma3RkeTFzTFZreE9HQm56TzJ2MVlwOEMwSGx6a1hseDVDM3ZTSEh1Q1JNZ0lkc2tQc1MwZlg3T1F5QmNQMHNocmEzamhkNVBNTkF5aTQtdFdNOWswOEgtcV8wamc?oc=5",
-    "date": "2025-12-11",
+    "source": "CoinDesk",
+    "title": "Surf Raises $15M to Build AI Model Tailored to Crypto Research - CoinDesk",
+    "summary": "Surf Raises $15M to Build AI Model Tailored to Crypto Research  CoinDesk",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSzdLcHE0a29xMDdGWGFmZFVleGJPQlJWUkVZNDVVWHotOVh1cWFoR21yeC1Wei1OU0pIYnhwQUs0OS1GdjRxWE9TYTFtbUZqMXc0RTFOWFZCcUpTbUdNVDlqNjlJMll5RHNzVUJHUmJrRXd4LU9pR0ZNVjFTTV9BMFUzWS1weUdhLVNsSDhxaE4yZWpybUhIekw3TEx0UzZWYnVqN1F6ejlsbzlFMkE?oc=5",
+    "date": "2025-12-10",
     "tags": [
-      "Product & Ecosystem"
+      "Fund Raising"
     ],
     "region": "Global"
   },
   {
-    "source": "PBS",
-    "title": "U.S. plans to sell advanced AI chips to China amid economic and security concerns - PBS",
-    "summary": "U.S. plans to sell advanced AI chips to China amid economic and security concerns  PBS",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOX25rWW1PcVlOeWp6LXBFYTAyZmFUZkNtVE5xNUxNOFZpZTlzQmMtV3htcHM5Vm1MSTRMdUNDVjJYdnJjTFc0SU9mYVNXWW9PSFNTdlhwOTFJcVcyVnBwMFgtYTJwRGtibVhsZ1dBRmNXclN0aUNzZUVXSU1ES1NUcktmdEhLUXJ5TUk5RWxHaHBMMUxfR01wSXcyanRjYk1YQTBocHFuc204TFBfR2xYRWNHd18?oc=5",
-    "date": "2025-12-09",
+    "source": "digitimes",
+    "title": "PCL Technologies eyes data center boom with AI-driven optical interconnects - digitimes",
+    "summary": "PCL Technologies eyes data center boom with AI-driven optical interconnects  digitimes",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWnEycEVtNjRBbC1SN0ozdDEtOTJTT2hVbHBleW9NVENsdHNBY3MxdThIVXVRcXZDc3E0UU9DbnhycmxyRVVVcG9rTVNsSnQzNFUzYVZXaUdNM2VSckpFRWJlRHpRQTVldzVFN0ZOZzZhNXhBWk5Hek1TOWJPb0ZnWlgwN1RGVHN0N3M4cEFvUkpZUUNoVnc?oc=5",
+    "date": "2025-12-12",
     "tags": [
-      "Hardware"
+      "Infra & Datacenters"
     ],
-    "region": "Asia-Pacific"
+    "region": "Global"
   },
   {
     "source": "BBC",
     "title": "Trump gives Nvidia the OK to sell advanced AI chips to China - BBC",
     "summary": "Trump gives Nvidia the OK to sell advanced AI chips to China  BBC",
     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBNMEJHVVl0bTZEVnJoOW9odWc1MUxDdGlxczg2M0s2dUlfOVZONUpYWXdIclFGanJXaGdkem9mRkhzSDN2VnZjYlF2X2ZPWXFidDgxaEFNRU9BZ9IBX0FVX3lxTE9OTFY0Ym83cFp0a3RkUlpfY2RrSHRJVU1xOXVBZlJmSi11bWFOMDd0cTgzLWRmV0pwWFhuLVRLZXNYWklHS29sdWdaQ0hTcy12Q3ZVbzIwRXJiR290SlA4?oc=5",
-    "date": "2025-12-09",
-    "tags": [
-      "Hardware"
-    ],
-    "region": "North America"
-  },
-  {
-    "source": "Reuters",
-    "title": "US to allow Nvidia H200 chip shipments to China, Trump says - Reuters",
-    "summary": "US to allow Nvidia H200 chip shipments to China, Trump says  Reuters",
-    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNU0M5QUZfR09vd0Y0NUx3VHczQ29MUlpMQVZzcHN5UU5sWHFxRDFQaGd3dU5iWkUwQ05fcDlNNlE4M1h3OUlfeVVNT1NLMF9wa00tXzQ4WmY2T2tucmdCX0dXVjI4c0dnd2RIRElFUnE4bmtaQWVyRFBqa3M4NTJ0eVotb05ENnppZ0NXNEdaNnI1b1BiV1E5U0pITlFCZzFpTVRzTS1JUUl1QQ?oc=5",
     "date": "2025-12-09",
     "tags": [
       "Hardware"
@@ -543,46 +246,290 @@
     "region": "North America"
   },
   {
-    "source": "Markets Financial Content",
-    "title": "Taiwan Semiconductor Manufacturing Company (TSM/NYSE): Powering the Future of AI and Global Technology - Markets Financial Content",
-    "summary": "Taiwan Semiconductor Manufacturing Company (TSM/NYSE): Powering the Future of AI and Global Technology  Markets Financial Content",
-    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPVUdLMTc3cmFadlNUQkFyOW43RUw5RWctM0dKa1BoZlRqeFphXzRqYXRFVEJCYkNXSHhVOWg1enlNNEhsX0ZLQzRrQlBsR3F6N01sb1hCR3BiZU9YdTI2amlDSVJ6TmxTSW1wZ3plUkFGalhIUlRrMXVaZUxBdzU2ejNHdVMtSXRqUlBpSjlrWjlIQVFCbUdWWVBVeTZFU1EtR19oWDRsWXg1WXR3dEFxSUc1Vk5yVEczZ1VSU29yOFBxN2U3VVJjTmVSMWpDV1JxMUwyUnNXeHBZRDI3WXlGM2dqa25SdnVIR0ZSeGlDNHpSVFFicjlvWXlnZVg2Rms5aV9J?oc=5",
+    "source": "ET Telecom",
+    "title": "SoftBank eyes data center group switch as Son hunts for AI - ET Telecom",
+    "summary": "SoftBank eyes data center group switch as Son hunts for AI  ET Telecom",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUHRzTWlJLThKdmR5STNfbGpSc195UzlIRzZxT2FIZzVKRnpHTE9mVWFPd3FwT05Zc19ucGFWYzdhMGpZblFTUEh1UmdHb0IwZUVjYlhveGtNZm1WRFJBS2VEdmJFa2xKR2RkMGhwME5nQjFwdTM4Y3c0Y2EzaFZDWHFRSkVYczhUWlJXc25raUI1dFlYVENFa3psV3VWQ25qVjhpSWhOajlHR0NvSWVCYnJMdjg5SGNseTJYZ2hrWnVURVZzZ3fSAcsBQVVfeXFMTmtldGFRbGk4dWJ1SkJsVldhRTVVN0o0N3NxVE13cUlDZGRPTFJwblZzbkhWVFlEd2Y5TnI3RWI4dkZlMkxhRmM5SEtIbVVjWWNMeVVGWXFsS21aMDczV1dpWjJnVnhwOXFzYXV6R2Q1emtibmE3cHRKT3h4WWRCOXp0WHRHT3I5ZEJHWWVWTHhhSnNVa0lHazl0R2JRR3FkUXJzX3MzeXhKTTNDcjF0bXR4ZjNtdXVlZWcwRGJLODdNOXNSY1I1S09FbEk?oc=5",
     "date": "2025-12-12",
     "tags": [
-      "Hardware"
+      "Infra & Datacenters"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "UBS",
+    "title": "Invest in transformational innovation - UBS",
+    "summary": "Invest in transformational innovation  UBS",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdTFkREpadC1jVjYxQ1ZjMnRMWFlFTllQYjA4ZllPZDEyX1NaSWFiQzFoZEUyc0hlMGN4bkpBYzc0ZEowR2FFRUxTZjJIS3ZINlM4TnlVS0dpbGJWWlFielRCeVVFU0E5X1JjRkpVc3E0c2x5UGN1RXFiTlB1NEU2Z0RRRXFPamZvOUNBVXZDNEE?oc=5",
+    "date": "2025-12-12",
+    "tags": [
+      "Product & Ecosystem"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "DataCenter Dynamics",
+    "title": "SoftBank considers acquiring data center operator Switch - report",
+    "summary": "",
+    "link": "https://www.datacenterdynamics.com/en/news/en/news/softbank-considers-acquiring-data-center-operator-switch-report/",
+    "date": "2025-12-12",
+    "tags": [
+      "Infra & Datacenters"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "Finimize",
+    "title": "Taiwan Unveils Nation’s Largest Supercomputer To Power AI Dreams - Finimize",
+    "summary": "Taiwan Unveils Nation’s Largest Supercomputer To Power AI Dreams  Finimize",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbzJKdjRvVmVxb3hnZzkwbkRJUVNuZmJJSzctNE1qamtNZ1V3ejg3SEU4T21fZTJkY0tKZ2tPUkM4N09QWkZuM3FSSlFISlhzYkE3Sl9WMFJfZzZhSWN2MWk3al9PaXBUckZUNFVxUUVlemVSaUdzZnIxUC1SX192UHpxYW9EOE9lY0h2QS1OVnYxR2dHWFl3?oc=5",
+    "date": "2025-12-12",
+    "tags": [
+      "Infra & Datacenters"
     ],
     "region": "Asia-Pacific"
   },
   {
-    "source": "The Motley Fool",
-    "title": "This Artificial Intelligence (AI) Infrastructure Stock Could Be the Nvidia of 2026 - The Motley Fool",
-    "summary": "This Artificial Intelligence (AI) Infrastructure Stock Could Be the Nvidia of 2026  The Motley Fool",
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNa2xsQ0NYZkdKVVRVM2FkcVMwLWJnVk53M2dNUFVnUlQtQlYzZXlhazBHRmhMR2MxVktDTmlMdXBjZGlCUlVVQTNpRlZOdEJRQzV0X2IybHIzVDFwSjJXNXFVSktQczlHUnlZLUp1SW15TkJYVUxGZ2luNmxLQ3pDQ3RVTEozMW5uNUFOVXBOeUpnTGRSN3c?oc=5",
-    "date": "2025-12-07",
+    "source": "Nonprofit Quarterly",
+    "title": "The People Say No: MediaJustice’s Advocacy Against AI Data Center Expansion - Nonprofit Quarterly",
+    "summary": "The People Say No: MediaJustice’s Advocacy Against AI Data Center Expansion  Nonprofit Quarterly",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPczdReEtpeXVFdFRvcFdiXzlOUFdQSDQyVnBKbUFYdERIOFlZRHVDV05CMkZuX2pXbW9RRWg3bTVhRXNyVVVIVjljY0c5SnRVTkhGSW9HZ3hETU5fNGhrcF9DV0w2eWNsLWZMampnckFWWlAxZDJud3lUMUVSZDcyb0RkTnpmMTBBMkF2SkNldHJkUHBlOTF3bGd3YmFremRfX1lDeGxKbXk?oc=5",
+    "date": "2025-12-12",
     "tags": [
-      "Hardware"
+      "Infra & Datacenters"
     ],
-    "region": "North America"
+    "region": "Global"
   },
   {
-    "source": "Yahoo Finance",
-    "title": "What Is 1 of the Best Artificial Intelligence Stocks to Buy Now? - Yahoo Finance",
-    "summary": "What Is 1 of the Best Artificial Intelligence Stocks to Buy Now?  Yahoo Finance",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOEI1eGN1MUc2ZGV5a052WlBwOEt1aWY4UHlTcVhzeFNJYnJyZnhNNGRGX19Od3JmWjdvNkJ0bk9DNlVXNEtoNWo1UHBIRy1NZWlCY2NNZm11VjgwQV9Zc0xlbm5YaHZvUC1yR0FRNEVub0p4WGFFN2V4NDlHd3FIMXVkbWR0RVkydmdr?oc=5",
-    "date": "2025-12-06",
+    "source": "CarbonCredits.com",
+    "title": "Environmental Groups Urge U.S. Congress to Pause Data Center Growth as Federal AI Rule Looms - CarbonCredits.com",
+    "summary": "Environmental Groups Urge U.S. Congress to Pause Data Center Growth as Federal AI Rule Looms  CarbonCredits.com",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNkx4REpaTEhZWGlDNkk5T2cxaWlDSTFKZHh1UTctSHE0eDFxSTAxSnhyODhZckM0d3V1cWVSbndMTi1ic193cjN6NE5uV3RYU3BnSHFYUGVVd253OXJkMG9CdVZuYjU2TGJiNVlYVlJia3pfcUg4bWp4UDFnSzdMSlRxZzNHUUx0c3lRTWlhRGZicmpZTll2a3dsSWZSU1JMV0NFbnNLcjBVbjBLWVk0OU5vcDVSTG50NGc?oc=5",
+    "date": "2025-12-12",
+    "tags": [
+      "Infra & Datacenters"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "Bloomberg.com",
+    "title": "AI Computer Startup Hits $4.5 Billion Valuation in Seed Round - Bloomberg.com",
+    "summary": "AI Computer Startup Hits $4.5 Billion Valuation in Seed Round  Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNHRJSC1YOWNhWnFTeEQ3MHF3REROQ2RVYy1JRFNUdWVSZkJha2JrZzJGSm9jdGw1TzNkbEh5ekE4R1RoWTdnbzRab1ZZclhTb25va1BNdFhCbzJNSjlkbl93ZTdJVUpZU2I5MVViWm54SDVlaXFPV3FrVjN1cmI0V09rUTZNNG5ydFNMSjRkRU1OaHItdUhzakdOVnJjSVFFcExzS2J2NUlIZ09TODVMaw?oc=5",
+    "date": "2025-12-08",
+    "tags": [
+      "Fund Raising"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "PYMNTS.com",
+    "title": "Unconventional AI Leads Funding Flurry With $475 Million Seed Round - PYMNTS.com",
+    "summary": "Unconventional AI Leads Funding Flurry With $475 Million Seed Round  PYMNTS.com",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZnUwcEVTaHJPM1Y4TDQ1ZExNX01JSmJCcDdDWUdyLU1LMnAwMHBrdFRFcl9oTHdkcHhTWjF0cDI3TFlOM24wU1JLQXpoSkV0WHRodlFwSm9teFdIdEgyamxjWVRHRE5HMFZXZ2FHU0hUdTNQblFQeDhJUXEycDJvRm9QZGIyMDNsYmktYm1LUzJIdnc5czBTaDdxVXJLUTJZSDc0TkkyR2NrcGdBY1luQmlqMS16dGV1QUhmSEZn?oc=5",
+    "date": "2025-12-09",
+    "tags": [
+      "Fund Raising"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "CryptoRank",
+    "title": "Unconventional AI’s Revolutionary $475M Seed Funding Fuels Energy-Efficient AI Hardware Vision - CryptoRank",
+    "summary": "Unconventional AI’s Revolutionary $475M Seed Funding Fuels Energy-Efficient AI Hardware Vision  CryptoRank",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQdFVYS19JdWNhTExtOFNMS1QwclgwQTg4ckM4c1h5QnY3OFQyem5ydWdoVFFFeDZMa1E0WUdNRnJkVFI0UG1UdmZSUDRRR29iZl9lR09wME44UFpDUFdtYU5wMVRiTGNPclhYZ3ozekdiZ2MxZDJxRl9Xc1VKWWVzVHpLZw?oc=5",
+    "date": "2025-12-10",
+    "tags": [
+      "Fund Raising"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "solutionsreview.com",
+    "title": "Artificial Intelligence News for the Week of December 12; Updates from Couchbase, DXC Technology, Qlik - solutionsreview.com",
+    "summary": "Artificial Intelligence News for the Week of December 12; Updates from Couchbase, DXC Technology, Qlik  solutionsreview.com",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPb2lXZHhMeUNha0NfaHRyX1RxNUE5NHVIMTE5M1ZmWlJCY3p5azhiRFNGSWpKQlJTNTBid0Z4YVVLSkVDQWk3SDRlWjFMRjFmTHd0R09LZ2s0ZWtvOF9qVm1ENjJlVGxzOGV3cXpaazlvTlBWajh5VE44Z1VVRk5mTUljYkdEM0xlQm4zSVF5Si1MRDdyaWpiei1ZdldjNmRxaU1pUkZwYlNNNkZIbEc3MlY4UzIxLTc0VTlLc2pnb3VRYjdSOXhodjdyUHZadw?oc=5",
+    "date": "2025-12-12",
     "tags": [
       "Hardware"
     ],
     "region": "Global"
   },
   {
-    "source": "TradingView",
-    "title": "Can TSM Sustain Gross Margin Improvement Amid Overseas Expansion? - TradingView",
-    "summary": "Can TSM Sustain Gross Margin Improvement Amid Overseas Expansion?  TradingView",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRnhDc3dZTUpWRUEwSEprVG1GVUlraU42ZGVhNWF6VEhEczVwVjZXVkVfNUcyWXFkdXE0eVBhcTRVVTd1Qnh4VXlOOEJQWEZucnVVUUQ5OFpHUTZtV3BJaEQ1YUhTOGRKY0xvTGdGU2V2NWRjamZsZnU1UmNoTXlNcHNvZkNpOXdSVnY4ZEJhcVFsbm95VS1PSnVFR3lwbXdCdm15OVlzakk3aFNpd2llQzdXcFRQckxTT1ZtVw?oc=5",
+    "source": "Nextgov/FCW",
+    "title": "White House instructs agencies to stop using ‘biased’ AI - Nextgov/FCW",
+    "summary": "White House instructs agencies to stop using ‘biased’ AI  Nextgov/FCW",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWXlxOEtDX21pcEhLdURoaENrcUNGaDZsbXNJVTVYbHBMU005aGM2MHp1dExWOEdtVnlfR1FNTHZ4Q0lGU3JxdjRVUG1XQzRKb2UxcjF0VldaZDYwOENkU0d6NzdfZjBiLVpXV29ZOS1hLVVHNll1RXlzVnNscmhFLWRaZTVfeFNRT3RoMmJEQUNDZGZhdDhYQzlkVWIzMV9xTjgxa2c1ckJkcWtoeXg4MnhXOFNJMVg5VDZ0TGFjRnNLVEotamhySi01bDNzUQ?oc=5",
+    "date": "2025-12-12",
+    "tags": [
+      "Product & Ecosystem"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "StartupHub.ai",
+    "title": "The smallest AI supercomputer runs 120B LLMs offline - StartupHub.ai",
+    "summary": "The smallest AI supercomputer runs 120B LLMs offline  StartupHub.ai",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRmN2M3UyQVBFNFVrV2pHYTZ6VE11cDR6VkRpcHdyanBlZ0ZRSVlab2ZjdHdXeDNudFZRV0M3bTA5MlNLYmV6ckU4Y2RHR3RDZWd1YmlFTzk2bC1Sd0FRdjE2dEJOVHVqZmNtOVE0azRXMkxOUHktMHdYZGx1WmF6MGZHSzJxNklVMGJsdDRTd1A2dHMwZ29lUkJqV3NFZlZ5N1hjc2xubHQxOHR1UVpUcTRFUGQ4b28?oc=5",
+    "date": "2025-12-10",
+    "tags": [
+      "Infra & Datacenters"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "Tech in Asia",
+    "title": "Sequoia leads $75m series B for US AI platform Serval - Tech in Asia",
+    "summary": "Sequoia leads $75m series B for US AI platform Serval  Tech in Asia",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTG56Wjd1WkFtV1ZpQ1RLekoyUFlUUXN3aFhEZEVQVDA3TjZoSnpOSVJLeE4xeGxRb1gxRHFvWTlyOU9MR3hubGNTZU9ERTFGZVlLcVBleTRza1BHcjNHSXh1aUt2Ti1YMnJnR0JheVJ3OUJfR2JaVkdxcEU1Wm1COHRFSjFveTBIUFRmTA?oc=5",
+    "date": "2025-12-12",
+    "tags": [
+      "Fund Raising"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "ETF Trends",
+    "title": "Dr. Ankur Crawford Talks AI Investment Philosophy & More - ETF Trends",
+    "summary": "Dr. Ankur Crawford Talks AI Investment Philosophy & More  ETF Trends",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVF9UQmllLV9hOEpURUJaMGZvdlI4cnNlZ3d2UTkyeDFILU5xaDE0QXRqcGx2QklDRFNUVzg5Q3BLNTNHM29FSkh3S3FSS0laejFpNE1xQmp6TEFtenZXbHcxYUpHRXFsRVVKS3RNNnljc250dExYQTlyU05XSzA3azUwb2NlMGR2bHVFdkEyQTZaUzBlLTl3d2RwaGU5SGFCRmQ1MFc3LWVGZW4tZVdVcXpwVjFJaHc?oc=5",
+    "date": "2025-12-12",
+    "tags": [
+      "Fund Raising"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "WIRED",
+    "title": "OpenAI, Anthropic, and Block Are Teaming Up to Make AI Agents Play Nice - WIRED",
+    "summary": "OpenAI, Anthropic, and Block Are Teaming Up to Make AI Agents Play Nice  WIRED",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeXdHbWdJME9DQVpnaGhFUS1SUlZpQlJZaHZnbm1BZUNJNi1TVGZHLVB0cGtmelhYZG5EanRmNlk1NlVKZE1TUVVFdG1DMHFTX3dPSnQ5YjR3c3AzMDRqMmFzcG95b3BiSnFMT0I0RGt2eldiUllXVjFWZVF1U1RKLWdoMVNvSGczc3NaaHQ1N2VsZGxjTU5v?oc=5",
     "date": "2025-12-09",
     "tags": [
       "Product & Ecosystem"
+    ],
+    "region": "North America"
+  },
+  {
+    "source": "Louisville Public Media",
+    "title": "The AI data center boom is coming for Kentucky. What will lawmakers do about it? - Louisville Public Media",
+    "summary": "The AI data center boom is coming for Kentucky. What will lawmakers do about it?  Louisville Public Media",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPOEFaVmdPT3hqWjlnQ0s4OVo3LVJicHRHSGgteEhTQnREeUJMVnhlR1BqVkt4MUxXaU5SczdIaFRTdGJDRUJLNy04Q2dfelFuTjYtdkVZZ2VYQmw3NGw2b0IzaHEzR01LelNkQzZWTEZSQlVfUE5CTnVnTEdZQlZhUTV3LWNRSDN1eW1hNXNaWC1NVVdiamJZWW1OelBGb2RCaFEtd3VjTzNfeWZOWUJaNDNyN1A?oc=5",
+    "date": "2025-12-09",
+    "tags": [
+      "Infra & Datacenters"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "WNEM",
+    "title": "Looking into potential for data centers in Mid-Michigan - WNEM",
+    "summary": "Looking into potential for data centers in Mid-Michigan  WNEM",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZkhyM0pNdlZwUjZYT3hlTEp6MWVZYWJOM1ZJVWVKUHQ3TmhyYUpsVlVwSnplLXlxXy1zZDBCeTlkMmxsTnJqRkJYeVNGdkxIcUx3ZVFLNHNaOHNRcVVoQkY1VWlxeGVGX2hsUXE0aVVjZXc0RXMyaU5VRmtDb2RlVU5zMlQxSFI30gGcAUFVX3lxTE9LWEp6SzNMd3BwMjlNYl9IVTM4MDFvU21iTkhGWlMwNFAzZEJtMllCM19JSnRvZUJlTmdkOTlCVWZpQmlpeE4wZFhpS3Y3VHNaNC1maW1DUWZxVkcyVkk1N200MHk5RFJRUVFkQ3NEOEZHS0hGRXRwTWlzTkk2bzNudWJHQ3d4cEVmRk1zd2hldmRvZkhmY0pMdW1PbA?oc=5",
+    "date": "2025-12-09",
+    "tags": [
+      "Infra & Datacenters"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "Meta FAIR",
+    "title": "Omnilingual ASR: Advancing Automatic Speech Recognition for 1,600+ Languages",
+    "summary": "",
+    "link": "https://ai.meta.com/blog/omnilingual-asr-advancing-automatic-speech-recognition/",
+    "date": "2025-12-12",
+    "tags": [
+      "Research",
+      "Meta FAIR"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "Meta FAIR",
+    "title": "Agents Rule of Two: A Practical Approach to AI Agent Security",
+    "summary": "",
+    "link": "https://ai.meta.com/blog/practical-ai-agent-security/",
+    "date": "2025-12-12",
+    "tags": [
+      "Research",
+      "Meta FAIR"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "digitimes",
+    "title": "AI hardware landscape shifts from GPUs to NPUs as edge computing gains ground - digitimes",
+    "summary": "AI hardware landscape shifts from GPUs to NPUs as edge computing gains ground  digitimes",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRmJIX25ydURmMFRXMVlaLTcybUJJT2QwSk1sVU1nQVgxVWh6cFU1YjR0RUxiR2tUZXpWYnBNLTNiTEtQWFdxeS1Oc012cUxEM2tETXFiWkpSeUh4M3dmUHNYNXhkTUxzWnI5d2hScUNBSnpLV1hCeDM5UDB4WVI3M3V2bXdIdFcyNElDYQ?oc=5",
+    "date": "2025-12-12",
+    "tags": [
+      "Hardware"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "DataCenter Dynamics",
+    "title": "Oracle delays some of its OpenAI data centers from 2027 to 2028 - report",
+    "summary": "",
+    "link": "https://www.datacenterdynamics.com/en/news/en/news/oracle-delays-some-of-its-openai-data-centers-from-2027-to-2028-report/",
+    "date": "2025-12-12",
+    "tags": [
+      "Infra & Datacenters"
+    ],
+    "region": "North America"
+  },
+  {
+    "source": "DataCenter Knowledge",
+    "title": "Data Center Knowledge Resource Library",
+    "summary": "",
+    "link": "https://www.datacenterknowledge.com/resources",
+    "date": "2025-12-12",
+    "tags": [
+      "Infra & Datacenters"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "DataCenter Dynamics",
+    "title": "The Xcelerated Compute Show New York",
+    "summary": "",
+    "link": "https://www.datacenterdynamics.com/en/news/en/dcdconnect-compute/new-york/2026/",
+    "date": "2025-12-12",
+    "tags": [
+      "Infra & Datacenters"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "DataCenter Dynamics",
+    "title": "The Xcelerated Compute Show London",
+    "summary": "",
+    "link": "https://www.datacenterdynamics.com/en/news/en/dcdconnect-compute/london/2026/",
+    "date": "2025-12-12",
+    "tags": [
+      "Infra & Datacenters"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "DataCenter Dynamics",
+    "title": "- HPC & Quantum",
+    "summary": "",
+    "link": "https://www.datacenterdynamics.com/en/news?term=hpc-quantum",
+    "date": "2025-12-12",
+    "tags": [
+      "Infra & Datacenters"
+    ],
+    "region": "Global"
+  },
+  {
+    "source": "DataCenter Dynamics",
+    "title": "Data Center Construction",
+    "summary": "",
+    "link": "https://www.datacenterdynamics.com/en/news/en/dcd-data-center-construction-channel-news/",
+    "date": "2025-12-12",
+    "tags": [
+      "Infra & Datacenters"
     ],
     "region": "Global"
   },
@@ -598,146 +545,14 @@
     "region": "Global"
   },
   {
-    "source": "Radiology Business",
-    "title": "Imaging artificial intelligence startup a2z Radiology raises $5M, scores 1st FDA clearance - Radiology Business",
-    "summary": "Imaging artificial intelligence startup a2z Radiology raises $5M, scores 1st FDA clearance  Radiology Business",
-    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOcGMtTHlhbGNPUGJpc2tJbXRmN2NQT1RGSFIzNk5KeXNwRzQzbkZUVEdyV2NPQzZSTS05THp3Rl9NS2VfOGwycGdRY0FLd3VwalFFV29Ba25qeUtONmhzOHQyZ0gxc2dBUEtDU3lGZ0FZTnYxVU9wcFRrbm5xQWI3NjdnYjVfa2pZQXpHd05UTnhidmJIaHBzVUhDOFZwcDFtVFE0Wm1HaEM0YmZUQmtoaFlhS3ZMbkZZclltLUNUbThLX1RidU9LdjlTclpqSWVwSmtZbUpQVE1DVE5Jb0NDcnNBbw?oc=5",
-    "date": "2025-12-10",
-    "tags": [
-      "Hardware"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "The Romania Journal",
-    "title": "Romanian-Led AI Startup Raises $12M from Andreessen Horowitz - The Romania Journal",
-    "summary": "Romanian-Led AI Startup Raises $12M from Andreessen Horowitz  The Romania Journal",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTVh4ZG51UldIY3gwTnhRd0RaZWxGZjZzeGZjY29WLVZWbGREejVFU1lzc3F3amtncnhPcGFEd2x3MlNLSG1pd0V5YlJNUDIybE9iOXJTclhISjVWZEVzRklGNUUyajhrZ0ozZk4zcnBSdGxFX2s1cnJ5TkpZTlAzRHBLS0J4cmxzd3lZdG5zMGpQcDMtbGJVbWhfWjlHUHFG0gGmAUFVX3lxTFB2M3JlaEFkOGQxTG85RHV4bGMtdkVDeDgxN0JTa0FvZ19FMnYyUHJiMlBJY21TUnd4RVJDQWRKSXJVMzh1MXoxRXdKcXFzYkdKZThXMjBrM0cwQ1p2TE5xcmRFclZ0VHkxRE1nbE9GT25DMFdhcHdsUHdKMno0QXdKek5SRFctaGMzNEtLQTdPRVBBaHN2ZDdBd3FyX3Q3czNGZVN6U3c?oc=5",
+    "source": "DataCenter Dynamics",
+    "title": "Taiwan launches data center with AI cluster",
+    "summary": "",
+    "link": "https://www.datacenterdynamics.com/en/news/en/news/taiwan-launches-data-center-with-ai-cluster/",
     "date": "2025-12-12",
     "tags": [
-      "Fund Raising"
-    ],
-    "region": "Europe"
-  },
-  {
-    "source": "SiliconANGLE",
-    "title": "AI inference startup Runware raises $50 to make AI run faster - SiliconANGLE",
-    "summary": "AI inference startup Runware raises $50 to make AI run faster  SiliconANGLE",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRXFXMDN1ZVNmel91ZkMyOEJ6Q043a3MxalhrLVQ1QUVXbVBKblB2dUE1dm9TVnVuVFNtSkFaanF0dkdVUDRoR1YxU3M4UjZQSklMN1pWNGNSeWhSWXlLbjBrNlBVcmFac3VPODBZWkRMSXVsY3JoU21hWFhFbEk0b19NR1ZoUFhtV0dwY0RnakFTY2tFbkY1TGdR?oc=5",
-    "date": "2025-12-12",
-    "tags": [
-      "Fund Raising"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "San Francisco Chronicle",
-    "title": "Bill Gates’ daughter secures $30M for an AI app she built in Stanford dorm room - San Francisco Chronicle",
-    "summary": "Bill Gates’ daughter secures $30M for an AI app she built in Stanford dorm room  San Francisco Chronicle",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOM1lnc2dlaFJ2UGxRVDdLZXU0RGY0M0drRDlNOTZEZUVqaFYtSFVrTHZNSFZtMElCOUFWcnlQdVExLVE4N1dRalcxWWlFOWk5VmRxSjBTU29salRzMVJEOUt2SEYwd3JlUC1iMGJmZENJMHZ3ZzRqazRFWTR2c3hTdElvYzZxNnhGTjFLbnAxU0lkLW1oWlBHYW5iSkRYSHJfS1E?oc=5",
-    "date": "2025-12-09",
-    "tags": [
-      "Fund Raising"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Surf Raises $15M to Build AI Model Tailored to Crypto Research - CoinDesk",
-    "summary": "Surf Raises $15M to Build AI Model Tailored to Crypto Research  CoinDesk",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSzdLcHE0a29xMDdGWGFmZFVleGJPQlJWUkVZNDVVWHotOVh1cWFoR21yeC1Wei1OU0pIYnhwQUs0OS1GdjRxWE9TYTFtbUZqMXc0RTFOWFZCcUpTbUdNVDlqNjlJMll5RHNzVUJHUmJrRXd4LU9pR0ZNVjFTTV9BMFUzWS1weUdhLVNsSDhxaE4yZWpybUhIekw3TEx0UzZWYnVqN1F6ejlsbzlFMkE?oc=5",
-    "date": "2025-12-10",
-    "tags": [
-      "Fund Raising"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "PYMNTS.com",
-    "title": "Goldman Investment Helps AI Firm Harness Reach $5 Billion Valuation - PYMNTS.com",
-    "summary": "Goldman Investment Helps AI Firm Harness Reach $5 Billion Valuation  PYMNTS.com",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQQXZnZjZLYl9wWkV2M09XN0Q3NlF3X3lHbUw5WEVYOU1UUFA2OE9UUERPaC1lSEZiejl1djQxd1RQb01oV0JpV3p2cmxuODAzc0I2V3lMTjZKaUs5WWxTUFB2YTNsXzh0QjAyMmVubVV5S1F1eUx2ZDdncDZyNXpEeVVtaklLNWxxbG9IS1NURDNxOVB0OTYyMUV4T2lycVEwemR1RV96akc1M2o4QTh0SXpFcER2b09qWDhJOGdB?oc=5",
-    "date": "2025-12-11",
-    "tags": [
-      "Fund Raising"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Tether.io",
-    "title": "Tether Invests in Generative Bionics as Part of Funding Round to Advance Intelligent “Made in Italy” Humanoid Robots - Tether.io",
-    "summary": "Tether Invests in Generative Bionics as Part of Funding Round to Advance Intelligent “Made in Italy” Humanoid Robots  Tether.io",
-    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOT2tjUmJsOTlDbVBOVTEwZ05qM3dCeWdHMzdSN3JTU3dOUmt3cW0yNlB6NDctaHlWSGVqb2xpN3JwWG1KYlhRN1lNWU5hVmVxR290NU1QMFVZaDNmb0VNd2t5b3N3MGF5Vm9yRjdtWWhBbHc4VjFLQUVOWGdrSk5TRktnN3Q0cW1PTkJWZ05sSlNQMWFMMWRsSGktQ240UFBqUWhNTmJyM1FmM24xZ2t3WS1TSF9aRjFITTVkZmgxdFlBTTd5U0plQklQOHIyMDZfbXhzZw?oc=5",
-    "date": "2025-12-08",
-    "tags": [
-      "Hardware"
-    ],
-    "region": "Europe"
-  },
-  {
-    "source": "Oaktree Capital Management",
-    "title": "Is It a Bubble? - Oaktree Capital Management",
-    "summary": "Is It a Bubble?  Oaktree Capital Management",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ZRk01TUJqUU9pUFZxM2Ezck13MDVHZ21lNVVpNkk3aUNfWDNWcXQtOXdvQUdMVDVDRXgtQTJ1T0xNY1dIMFo0bFVxQndmV0VkZVRDQXlQaUdZX1pITkZrMUR2V2NaNTJyejY0?oc=5",
-    "date": "2025-12-09",
-    "tags": [
-      "Product & Ecosystem"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "The Wall Street Journal",
-    "title": "U.S. Investors Are Going Big on China AI Despite Concerns in Congress - The Wall Street Journal",
-    "summary": "U.S. Investors Are Going Big on China AI Despite Concerns in Congress  The Wall Street Journal",
-    "link": "https://news.google.com/rss/articles/CBMirgNBVV95cUxNYVVZNjhiZnBJMFkxVlBnTWZkMy0za3dydFAwS1M0N09DTGd6cGZhOXJYVFlmNkJHUnhaWG9fWGExdGFPNE5oN3psYUUtRDZ6NlpKNEg1NUh6V0JwNHFuZHc5ZnpSVlpfT1VoMFpGQzM5S2ZOMmJ1MGlOWVI5M05ydEdieTd1Y2xCQjVFMEl3enpwbU1hWDJhS0tXdGF5UDJzQ1NUdDMxU1dCTHVmRVVxcHE4YUdDdlY5YUtMclpTdTFkUW9nR0RGMW5DZ2RTTkVhNzlZM0hINzRObW0tM1FXYkZJY1Z1YjFQLWJualE0V2ZIZE9tQjl3REtyOEdZM2NxalZ6MktNRzlHZk5KZVVhcWs1dmk5VmdaUkhuQ2FBR2tMaTRNY0YzODNyS0JheXRBVUZWYl81b3lfbG9Va05MQTVNZk9ibUJjV2pEMVF5RDlEaUZEMTZRdWs1MXlvWFJsU0tiTGpfZ1JxOEV6N0R0ZG1wRmpaMVJHbEY4Rzk3NjdYMC1OSkJ1cVVZWnoxeVJBd19aY3VyLTB6MHc5ZWJiYWxueXE2Vmp4NXdkVXF3?oc=5",
-    "date": "2025-12-11",
-    "tags": [
-      "Product & Ecosystem"
+      "Infra & Datacenters"
     ],
     "region": "Asia-Pacific"
-  },
-  {
-    "source": "CBS News",
-    "title": "Trump signs executive order to block \"excessive\" state AI regulations - CBS News",
-    "summary": "Trump signs executive order to block \"excessive\" state AI regulations  CBS News",
-    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbUpoMFRwN0M3bnBQOVZxZjA4MzRUVUpXYjVUY0ZqejJ4NG9aa0xiZEJYNW1MeVNwcDlUU3JDUVdyY1JEdDZDdF8wQUhLcGxudjNqQUR3RlVIS2FULTBFYjZiTjdUWWF2TldvWEJ6dk9YR1hyblZ4MFhvMURnOFUyYTZ3cktQRjBmYjNBU3hMUDDSAZYBQVVfeXFMTmNWRGQzR1hjUFY1bEh6TW96WUpYRW42RThYWTNVVk5aekt2cmVxeTdjRXFBclVQaTJSaXVaaUpSSG1BMDg4dFA0QmF0dEhwSGt6SGdwVlphX0RtcUJNSDNSRFRSRk9iZWVMdmtYdWtYQzZ1dDhyQ1Y1a2txNUZFXzQwaHZBajljZDVCOEstUTBBMU5LWFd3?oc=5",
-    "date": "2025-12-12",
-    "tags": [
-      "Product & Ecosystem"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Yahoo! Finance Canada",
-    "title": "Why big money managers are pouring billions into artificial intelligence (AI) and what investors can learn - Yahoo! Finance Canada",
-    "summary": "Why big money managers are pouring billions into artificial intelligence (AI) and what investors can learn  Yahoo! Finance Canada",
-    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTkhad2tIcWllTXVRbFJZWlpEUjhmTXMxelNHb0tDd0F0dDRrdDBFNHliXzUzRmZBRGtaWXU3MUhVcC1TNEhLRmNDX0puNzhUQkMzNXN1QUJIMGU2YjZWdXdJc1FPNnhlcnVPQURZVDJyMXM4Smg3aGxYV3FIcy1rcUFrLVJMQQ?oc=5",
-    "date": "2025-12-12",
-    "tags": [
-      "Hardware"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "ExecutiveGov",
-    "title": "DOE Announces $320M Investment to Advance Genesis Mission AI - ExecutiveGov",
-    "summary": "DOE Announces $320M Investment to Advance Genesis Mission AI  ExecutiveGov",
-    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9pcnlVNXRlWGx1NWt2UVludnM2anZWeGRjM2t6WmdFcjhnMlN2eU1rd0FNQTJRaFlHZ09yRk00ZUt5Qm0yQVc1cnNieURCVGFhRUdkZHRiTDhwR3JuVWZQU2F6QlVmNDRlbG1Vbk43anJRenJmNG9ycUtRUQ?oc=5",
-    "date": "2025-12-11",
-    "tags": [
-      "Fund Raising"
-    ],
-    "region": "Global"
-  },
-  {
-    "source": "Crunchbase News",
-    "title": "Seed Funding In 2025 Broke Records Around Big Rounds And AI, With US Far In The Lead - Crunchbase News",
-    "summary": "Seed Funding In 2025 Broke Records Around Big Rounds And AI, With US Far In The Lead  Crunchbase News",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUzhBeFp3YzlLTERLSG13YUFjUFF1S0tYZnhNTXR3Ymg1U1FCMHJzelZRR1huNmh5dnNWdWpxZ1MyUTdXdE5fX1VUU2tRN1hiSGFDNThlRklDTGxOT3ZfSjYyOU03M3N1MTNHdHAxcHFGQlF0ZHNEamJMU1BGVTFfT2JyTXVMems?oc=5",
-    "date": "2025-12-12",
-    "tags": [
-      "Fund Raising"
-    ],
-    "region": "Global"
   }
 ]
